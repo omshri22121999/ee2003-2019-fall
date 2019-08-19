@@ -1,0 +1,25 @@
+INFO:sim:172 - Generating IP...
+WARNING:sim:100 - The Simulation File Type <Behavioral> is not valid for this
+   core. Overriding with File Type <structural>.
+Customizing IP...
+Release 14.7 - Xilinx CORE Generator IP GUI Launcher P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Finished Customizing.
+Generating IP...
+Configuring files for icon0 root...
+WARNING:coreutil - Failed to generate file: chipscope_icon_xmdf_tcl
+       invoked from within
+   "deliverEJava [getComponentName] {}"
+       (procedure "components::icon0::pre_generation" line 52)
+       invoked from within
+   "$PreGenerationTargets"
+       (procedure "::xilinx::sim::generation::generatePsfCore" line 55)
+       invoked from within
+   "::xilinx::sim::generation::generatePsfCore {chipscope_icon_v1_06_a} {icon0}
+   {ALL}"ERROR:sim - Failed to generate file: chipscope_icon_xmdf_tcl
+
+ERROR:sim - Error found during generation.
+ERROR:sim - Failed to generate 'icon0'.  Failed to generate file:
+   chipscope_icon_xmdf_tcl
+
+Wrote CGP file for project 'icon0'.

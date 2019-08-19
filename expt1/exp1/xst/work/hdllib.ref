@@ -1,0 +1,7 @@
+MO vio0 NULL ipcore_dir/vio0.v vlg3A/vio0.bin 1565851415
+MO vio1 NULL ipcore_dir/vio1.v vlg3B/vio1.bin 1565937094
+MO ALU32 NULL ../alu32.v vlg4B/_a_l_u32.bin 1565937094
+MO top NULL ../top.v vlg6F/top.bin 1565937094
+MO icon0 NULL ipcore_dir/icon0.v vlg5D/icon0.bin 1565851415
+MO icon1 NULL ipcore_dir/icon1.v vlg5E/icon1.bin 1565937094
+MO ila1 NULL ipcore_dir/ila1.v vlg67/ila1.bin 1565937094

@@ -1,0 +1,21 @@
+ISim log file
+Running: /home/omshripc/Sem 5/EE2003/ISE/expt0/exp0/seq_mult_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/omshripc/Sem 5/EE2003/ISE/expt0/exp0/seq_mult_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0xfbc00daa)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+                  40 Passed   10 *    1 =     10
+                  90 Passed   10 *    2 =     20
+                 170 Passed   20 *   20 =    400
+                 220 Passed  -10 *    2 =    -20
+                 410 Passed   10 *   -2 =    -20
+                 600 Passed   -1 *   -1 =      1
+                 630 Passed   10 *    0 =      0
+                 680 Passed    0 *    2 =      0
+PASS           8 tests
+Stopped at time : 680 ns : File "/home/omshripc/Sem 5/EE2003/ISE/expt0/seq_mult_tb.v" Line 94
+# exit 0
