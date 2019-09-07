@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/omshripc/Sem 5/EE2003/ISE/expt2/exp2/top.ncd
+OUTFILE=/home/omshripc/Sem 5/EE2003/ISE/expt2/exp2/top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=/home/omshripc/Sem 5/EE2003/ISE/expt2/exp2
+LICENSE=ISE
+USER_INFO=211205412_1777518462_210637445_004

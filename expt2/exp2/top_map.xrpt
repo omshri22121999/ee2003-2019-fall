@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<document OS="lin64" product="ISE" version="14.7">
+
+  <!--The data in this file is primarily intended for consumption by Xilinx tools.
+    The structure and the elements are likely to change over the next few releases.
+    This means code written to parse this file will need to be revisited each subsequent release.-->
+
+  <application stringID="Map" timeStamp="Tue Sep  3 22:26:04 2019">
+    <section stringID="User_Env">
+      <table stringID="User_EnvVar">
+        <column stringID="variable"/>
+        <column stringID="value"/>
+        <row stringID="row" value="0">
+          <item stringID="variable" value="LD_LIBRARY_PATH"/>
+          <item stringID="value" value="/opt/tools/xilinx/ise/14.7/ISE_DS/ISE//lib/lin64:/opt/tools/xilinx/ise/14.7/ISE_DS/ISE/lib/lin64:/opt/tools/xilinx/ise/14.7/ISE_DS/ISE/smartmodel/lin64/installed_lin64/lib:/opt/tools/xilinx/ise/14.7/ISE_DS/ISE/sysgen/lib:/opt/tools/xilinx/ise/14.7/ISE_DS/EDK/lib/lin64:/opt/tools/xilinx/ise/14.7/ISE_DS/common/lib/lin64"/>
+        </row>
+        <row stringID="row" value="1">
+          <item stringID="variable" value="LMC_HOME"/>
+          <item stringID="value" value="/opt/tools/xilinx/ise/14.7/ISE_DS/ISE/smartmodel/lin64/installed_lin64"/>
+        </row>
+        <row stringID="row" value="2">
+          <item stringID="variable" value="XILINX_DSP"/>
+          <item stringID="value" value="/opt/tools/xilinx/ise/14.7/ISE_DS/ISE"/>
+        </row>
+        <row stringID="row" value="3">
+          <item stringID="variable" value="XILINX_PLANAHEAD"/>
+          <item stringID="value" value="/opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead"/>
+        </row>
+        <row stringID="row" value="4">
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="/opt/tools/xilinx/ise/14.7/ISE_DS/ISE/"/>
+        </row>
+        <row stringID="row" value="5">
+          <item stringID="variable" value="XILINX_EDK"/>
+          <item stringID="value" value="/opt/tools/xilinx/ise/14.7/ISE_DS/EDK"/>
+        </row>
+        <row stringID="row" value="6">
+          <item stringID="variable" value="PATH"/>
+          <item stringID="value" value="/opt/tools/xilinx/ise/14.7/ISE_DS/ISE//bin/lin64:/opt/tools/xilinx/ise/14.7/ISE_DS/ISE/bin/lin64:/opt/tools/xilinx/ise/14.7/ISE_DS/ISE/sysgen/util:/opt/tools/xilinx/ise/14.7/ISE_DS/ISE/sysgen/bin:/opt/tools/xilinx/ise/14.7/ISE_DS/ISE/../../../DocNav:/opt/tools/xilinx/ise/14.7/ISE_DS/PlanAhead/bin:/opt/tools/xilinx/ise/14.7/ISE_DS/EDK/bin/lin64:/opt/tools/xilinx/ise/14.7/ISE_DS/EDK/gnu/microblaze/lin/bin:/opt/tools/xilinx/ise/14.7/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin:/opt/tools/xilinx/ise/14.7/ISE_DS/EDK/gnu/arm/lin/bin:/opt/tools/xilinx/ise/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin:/opt/tools/xilinx/ise/14.7/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin:/opt/tools/xilinx/ise/14.7/ISE_DS/common/bin/lin64:/usr/share/swift/usr/bin:/home/omshripc/.pyenv/shims:/home/omshripc/.pyenv/bin:/home/omshripc/.nvm/versions/node/v11.1.0/bin:/usr/local/cuda-9.0/bin:/home/omshripc/bin:/home/omshripc/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/omshripc/flutter/bin"/>
+        </row>
+      </table>
+      <item stringID="User_EnvOs" value="OS Information">
+        <item stringID="User_EnvOsname" value="Ubuntu"/>
+        <item stringID="User_EnvOsrelease" value="Ubuntu 18.04.3 LTS"/>
+      </item>
+      <item stringID="User_EnvHost" value="omshripc"/>
+      <table stringID="User_EnvCpu">
+        <column stringID="arch"/>
+        <column stringID="speed"/>
+        <row stringID="row" value="0">
+          <item stringID="arch" value="Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz"/>
+          <item stringID="speed" value="2820.207 MHz"/>
+        </row>
+      </table>
+    </section>
+    <section stringID="MAP_OPTION_SUMMARY">
+      <item DEFAULT="OFF" label="-ir" stringID="MAP_IGNORERLOCS" value="OFF"/>
+      <item DEFAULT="area" label="-cm" stringID="MAP_COVER_MODE" value="area"/>
+      <item DEFAULT="None" label="-intstyle" stringID="MAP_INTSTYLE" value="ise"/>
+      <item DEFAULT="None" label="-o" stringID="MAP_OUTFILE" value="top_map.ncd"/>
+      <item DEFAULT="off" label="-pr" stringID="MAP_PACK_INTERNAL" value="off"/>
+      <item DEFAULT="None" label="-p" stringID="MAP_PARTNAME" value="xc3s500e-fg320-5"/>
+    </section>
+    <task stringID="MAP_PACK_REPORT">
+      <section stringID="MAP_DESIGN_INFORMATION">
+        <item stringID="MAP_PART" value="3s500efg320-5"/>
+        <item stringID="MAP_DEVICE" value="xc3s500e"/>
+        <item stringID="MAP_ARCHITECTURE" value="spartan3e"/>
+        <item stringID="MAP_PACKAGE" value="fg320"/>
+        <item stringID="MAP_SPEED" value="-5"/>
+      </section>
+      <section stringID="MAP_DESIGN_SUMMARY">
+        <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
+        <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
+        <item dataType="int" stringID="MAP_NUM_WARNINGS" value="254"/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="686428"/>
+        <item stringID="MAP_TOTAL_REAL_TIME" value="6 secs "/>
+        <item stringID="MAP_TOTAL_CPU_TIME" value="4 secs "/>
+      </section>
+      <section stringID="MAP_SLICE_REPORTING">
+        <item AVAILABLE="9312" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="3243">
+          <item dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="3242"/>
+          <item dataType="int" stringID="MAP_NUM_SLICE_LATCH" value="1"/>
+        </item>
+        <item AVAILABLE="9312" dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="1556">
+          <item dataType="int" label="Number of route-thrus" stringID="MAP_NUM_LUT_RT" value="63"/>
+          <item dataType="int" label="Number used as Shift registers" stringID="MAP_NUM_SHIFT" value="388"/>
+        </item>
+        <item AVAILABLE="4656" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="3042">
+          <item dataType="int" label="Number of Slices containing unrelated logic" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
+        </item>
+      </section>
+      <section stringID="MAP_IOB_REPORTING">
+        <section stringID="MAP_IOB_DATA">
+          <item AVAILABLE="232" dataType="int" stringID="MAP_AGG_BONDED_IO" value="1"/>
+        </section>
+      </section>
+      <section stringID="MAP_HARD_IP_REPORTING">
+        <item AVAILABLE="20" dataType="int" stringID="MAP_NUM_RAMB16" value="11"/>
+        <item AVAILABLE="24" dataType="int" label="Number of BUFGMUXs" stringID="MAP_NUM_BUFGMUX" value="2"/>
+        <item AVAILABLE="1" dataType="int" stringID="MAP_NUM_BSCAN" value="1"/>
+      </section>
+      <section stringID="MAP_MACRO_RPM_REPORTING">
+        <item dataType="int" stringID="MAP_HARD_MACROS" value="0"/>
+        <item dataType="int" stringID="MAP_RPMS" value="15"/>
+      </section>
+      <section stringID="MAP_IOB_PROPERTIES">
+        <table stringID="MAP_IOB_TABLE">
+          <column label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME"/>
+          <column stringID="Type"/>
+          <column stringID="Direction"/>
+          <column label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD"/>
+          <column label="Diff&#xA;Term" stringID="DIFF_TERM"/>
+          <column label="Drive&#xA;Strength" stringID="DRIVE_STRENGTH"/>
+          <column label="Slew&#xA;Rate" stringID="SLEW_RATE"/>
+          <column label="Reg&#xA;(s)" stringID="REGS"/>
+          <column stringID="Resistor"/>
+          <column label="IOB&#xA;Delay" stringID="IOB_DELAY"/>
+          <row stringID="row" value="1">
+            <item label="IOB&#xA;Name" sort="smart" stringID="IOB_NAME" value="clk"/>
+            <item stringID="Type" value="IBUF"/>
+            <item stringID="Direction" value="INPUT"/>
+            <item label="IO&#xA;Standard" sort="smart" stringID="IO_STANDARD" value="LVCMOS33"/>
+            <item label="IOB&#xA;Delay" stringID="IOB_DELAY" value="0 / 0"/>
+          </row>
+        </table>
+      </section>
+      <section stringID="MAP_RPM_MACROS">
+        <section stringID="MAP_SHAPE_SECTION">
+          <item dataType="int" stringID="MAP_NUM_SHAPE" value="ila_instance/U0_I_NO_D.U_ILA/U_TRIG/U_TM/G_NMU[3].U_M/U_MU/I_MUT_GANDX.U_match/I_SRL16.U_GANDX_SRL16_MSET"/>
+        </section>
+      </section>
+      <section stringID="MAP_GUIDE_REPORT"/>
+      <section stringID="MAP_AREA_GROUPS_PARTITIONS"/>
+      <section stringID="MAP_TIMING_REPORT"/>
+      <section stringID="MAP_CONFIGURATION_STRING_DETAILS"/>
+      <section stringID="MAP_GENERAL_CONFIG_DATA">
+        <item stringID="MAP_DISABLE_ATTR" value="LOW"/>
+        <item stringID="MAP_INITP_00" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INITP_01" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INITP_02" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INITP_03" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INITP_04" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INITP_05" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INITP_06" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INITP_07" value="0000000000000000000000000000000000000000000000000000000000000000"/>
+        <item stringID="MAP_INIT_00" value="69007E321327655B49624C7A5126401D28345F771C7D6A04086D183F7018141C"/>
+        <item stringID="MAP_INIT_01" value="0B3C7249507D1A42170F3C141A4175635A17564776277956292649215F03694E"/>
+        <item stringID="MAP_INIT_02" value="4B5B12284C03740B7F472D1F2B0F0378280947003A337E0E5379433B030D4513"/>
+        <item stringID="MAP_INIT_03" value="3C64563B7A55522F7A08464A4A4045183C0B150E7946120510486404705A2958"/>
+        <item stringID="MAP_INIT_04" value="2B686B0419252A310C48385F3F3D362F5D4D70767A7349240260791708170D10"/>
+        <item stringID="MAP_INIT_05" value="6E387E0D50675C04257530753B4C72176B21752E4A24243A7D4C006F691E1774"/>
+        <item stringID="MAP_INIT_06" value="64077E014D1735451D233C68604101595E17521F354861630D6E460476065214"/>
+        <item stringID="MAP_INIT_07" value="4656023B231D595E270A20105961612558255E7F7976080166244A050C297423"/>
+        <item stringID="MAP_INIT_08" value="0D5D10660F730975404170176D26346F2A3F4B2656490A225F2610663C6E1324"/>
+        <item stringID="MAP_INIT_09" value="560A5C50576A4D095E345703016213260711480B59741866652F245925501F14"/>
+        <item stringID="MAP_INIT_0A" value="6906406D671C05201D7D3A0739723F5803443E1C2D5C1E23191D1F05496D2126"/>
+        <item stringID="MAP_INIT_0B" value="7E7B4A091C461445370232656E0D783E1901372C401E3D3573141A1E5B0C4333"/>
+        <item stringID="MAP_INIT_0C" value="4922542C4404661F6D5873696C005B152D1202196708356C2B5013693C324C1D"/>
+        <item stringID="MAP_INIT_0D" value="5C177A4F7B623D5467210A1B1F135B637D6E6F0E29451848563929673B4F7246"/>
+        <item stringID="MAP_INIT_0E" value="24335C13586C3F194022396C62074D10125154200530607F717E360443195D6C"/>
+        <item stringID="MAP_INIT_0F" value="7B481B42204E5E6714097010361078472C26431E3F411A14795931740F3A3C2A"/>
+        <item stringID="MAP_INIT_10" value="10515D09213F545E0F6E545C48552E10297463172E0C132F7C7D640B51101765"/>
+        <item stringID="MAP_INIT_11" value="034C184F73683B09183C2F0F7674092F47787C05721F0D22736C3B1A33491216"/>
+        <item stringID="MAP_INIT_12" value="237926722B1B0F2B3D437212645F3D47717B1D4B4A452F5A5D43202F440F4F11"/>
+        <item stringID="MAP_INIT_13" value="3A63103D265F33284E53377422721D2C005C02717314142050144B2A343A1B35"/>
+        <item stringID="MAP_INIT_14" value="101C54120013235651413D751D626A13430B2B74244E0C313E1E52486454474A"/>
+        <item stringID="MAP_INIT_15" value="1B5A6D6C61303D1D72386A3A1B5958000126623866195772543F7A6A21310E7E"/>
+        <item stringID="MAP_INIT_16" value="1257612A042901196D330465651418165E7416187F0B33760B26426404666027"/>
+        <item stringID="MAP_INIT_17" value="132F37191D7A774B710278027B48781C2358627D41180544666F2B6A5842634B"/>
+        <item stringID="MAP_INIT_18" value="0F581D4E0802497F2E70350E147A3E04466C6A633A040C130D471D7869744937"/>
+        <item stringID="MAP_INIT_19" value="490B4E1239046829137B1F6D381338032D2E78431578605B180B6A244E210B60"/>
+        <item stringID="MAP_INIT_1A" value="5F5C2F473625383C782A715E1454797312295A59536E674D4C284E146C3F6E03"/>
+        <item stringID="MAP_INIT_1B" value="1C600C5D401C0A07096607495C3014096C027A6411717A5D09496E5A5B4A0300"/>
+        <item stringID="MAP_INIT_1C" value="5E56252A4E5E314C143C17475C69590B3076775469207D7C1B1B204B1B043537"/>
+        <item stringID="MAP_INIT_1D" value="731A27157D60083C2B507C4A41401A2019797654375D2B032429362C6A03112A"/>
+        <item stringID="MAP_INIT_1E" value="452A23177D073E28166236427207326B56006B5E0D4F1C6D6304492374140547"/>
+        <item stringID="MAP_INIT_1F" value="5B415E2744567D5F092845602C401A055C2F3123031718412E1E2B605C141A4E"/>
+        <item stringID="MAP_INIT_20" value="19432E02356F164D152551223F7917073A2277157D18705A626F3B7F4C1C6657"/>
+        <item stringID="MAP_INIT_21" value="407D443C694568622F095C1C4A230256694C797E6C6F07361B173A707F3E1C11"/>
+        <item stringID="MAP_INIT_22" value="683A626713793F4B3224761A5F7D562E303B7746241F3D345C4F301C2322427E"/>
+        <item stringID="MAP_INIT_23" value="36143B536A597D70483E57201C7913116F1F327B750E38793217401224704152"/>
+        <item stringID="MAP_INIT_24" value="1B62554649471158761D772000682E2C67465D524F1955532B5A400C39262F38"/>
+        <item stringID="MAP_INIT_25" value="60171C42466A4F134B43401B6A634F383A0D790C5B0077787D29141E6C2B2949"/>
+        <item stringID="MAP_INIT_26" value="7506331E01447F38203C260F22346052375B6A4D1379001A402977342D2F1120"/>
+        <item stringID="MAP_INIT_27" value="403C760E407B7A01615C737A761A7F1B772A7D2268556F2846180F5221782F2C"/>
+        <item stringID="MAP_INIT_28" value="036D252F6F2E286F23653C4443107A5F4F0A263D5C79780523122167767F711F"/>
+        <item stringID="MAP_INIT_29" value="58280C361E051D74136D627F126F57723A2770685B284159000F2E291B091232"/>
+        <item stringID="MAP_INIT_2A" value="07515F750C623D432767110E2D451B0F466022657D30642D60605D206B6B575F"/>
+        <item stringID="MAP_INIT_2B" value="775B2106516F0F73020C6232113D1506743E786F1733794A1A2050414A1C1F7D"/>
+        <item stringID="MAP_INIT_2C" value="64186B517B556D02706D120E7C0D6A581F2D38267B17047D1107295F5F354B7A"/>
+        <item stringID="MAP_INIT_2D" value="5C2D3B3F673C5C7077221C252155736B644E667E4C0F37610D452A0A1605696A"/>
+        <item stringID="MAP_INIT_2E" value="4E7E350E73235860100804394460671F5A6F4F026C3D1C375D03041D3D5F370C"/>
+        <item stringID="MAP_INIT_2F" value="221A2C04134648063C54104A220F72123E4F163D7A5855306E70016717352C3E"/>
+        <item stringID="MAP_INIT_30" value="73662C4D503A4501787C5534521C710B7F036C56394C03016C5526325F54264F"/>
+        <item stringID="MAP_INIT_31" value="6A675100331B7E5F054A1D0478234405684F6E726023542837376567366D7145"/>
+        <item stringID="MAP_INIT_32" value="5146646439103E0C71311200132E654D501B7838643B2C07102B577E21357B10"/>
+        <item stringID="MAP_INIT_33" value="256F07602027440372554B0E0D615D3173752F0062692F4B0E606D7C2D366D48"/>
+        <item stringID="MAP_INIT_34" value="4B663A06007274695E005F4B036D2F4F294A3C6026115D18546C496A0A433673"/>
+        <item stringID="MAP_INIT_35" value="1603006A1C570C4A181B551A6034214C12002F5D21675239647F1559730B4A2B"/>
+        <item stringID="MAP_INIT_36" value="2D3D5E6A7C357B64403D2B0A491F32292E06214C3D3C2558614C3C7061367E12"/>
+        <item stringID="MAP_INIT_37" value="35545A026F634549441B635C1C7123401A101A456E08717B664C606F1E263730"/>
+        <item stringID="MAP_INIT_38" value="5E01586B671F565A325119196A1045566212455C04337B2B475C0C3327554045"/>
+        <item stringID="MAP_INIT_39" value="7E2721180C790E516910115E6A4D385B264E325C4647460B5D6A302028164C75"/>
+        <item stringID="MAP_INIT_3A" value="4416315453663A754F5A5B2829451D40130E05347673547A0B7E7B04710B4B37"/>
+        <item stringID="MAP_INIT_3B" value="2A43125C39027949107E2D5F553E0315510646620A434C6043081628135E1F55"/>
+        <item stringID="MAP_INIT_3C" value="1201327D0E110E77512B47055553255358347C7C04693227267630192C284667"/>
+        <item stringID="MAP_INIT_3D" value="6122156846452005526E6E7F4B213A7B3C440F2112470A7A221A282433702C52"/>
+        <item stringID="MAP_INIT_3E" value="4A675B464D48385C635E580844031F653D295D6D6A67006A2D3E500A29077173"/>
+        <item stringID="MAP_INIT_3F" value="7F7F645F554B2245256C33202C543A78553A1B5E59510E0F0F3B7B5B1835644A"/>
+        <item stringID="MAP_INIT_A" value="00000"/>
+        <item stringID="MAP_SRVAL_A" value="00000"/>
+        <item stringID="MAP_INIT_B" value="00000"/>
+        <item stringID="MAP_SRVAL_B" value="00000"/>
+      </section>
+      <section stringID="MAP_CONTROL_SET_INFORMATION"/>
+    </task>
+  </application>
+
+</document>

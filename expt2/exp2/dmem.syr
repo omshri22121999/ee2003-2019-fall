@@ -1,0 +1,401 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> 
+Reading design: dmem.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "dmem.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "dmem"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : dmem
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ipcore_dir/dmem_core.v" in library work
+Compiling verilog file "../dmem.v" in library work
+Compiling verilog include file "../params.v"
+Module <dmem_core> compiled
+Module <dmem> compiled
+No errors in compilation
+Analysis of file <"dmem.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <dmem> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <dmem>.
+WARNING:Xst:2211 - "ipcore_dir/dmem_core.v" line 36: Instantiating black box module <dmem_core>.
+WARNING:Xst:2211 - "ipcore_dir/dmem_core.v" line 44: Instantiating black box module <dmem_core>.
+WARNING:Xst:2211 - "ipcore_dir/dmem_core.v" line 52: Instantiating black box module <dmem_core>.
+WARNING:Xst:2211 - "ipcore_dir/dmem_core.v" line 60: Instantiating black box module <dmem_core>.
+Module <dmem> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <dmem>.
+    Related source file is "../dmem.v".
+WARNING:Xst:647 - Input <daddr<31:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <addrb> equivalent to <addra> has been removed
+    Register <addrc> equivalent to <addra> has been removed
+    Register <addrd> equivalent to <addra> has been removed
+    Found 32-bit register for signal <outdata>.
+    Found 10-bit register for signal <addra>.
+    Found 8-bit register for signal <dina>.
+    Found 8-bit register for signal <dinb>.
+    Found 8-bit register for signal <dinc>.
+    Found 8-bit register for signal <dind>.
+    Found 1-bit register for signal <wea>.
+    Found 1-bit 4-to-1 multiplexer for signal <wea$mux0000> created at line 80.
+    Found 1-bit register for signal <web>.
+    Found 1-bit 4-to-1 multiplexer for signal <web$mux0000> created at line 80.
+    Found 1-bit register for signal <wec>.
+    Found 1-bit 4-to-1 multiplexer for signal <wec$mux0000> created at line 80.
+    Found 1-bit register for signal <wed>.
+    Found 1-bit 4-to-1 multiplexer for signal <wed$mux0000> created at line 80.
+    Summary:
+	inferred  78 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <dmem> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 10
+ 1-bit register                                        : 4
+ 10-bit register                                       : 1
+ 32-bit register                                       : 1
+ 8-bit register                                        : 4
+# Multiplexers                                         : 4
+ 1-bit 4-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/dmem_core.ngc>.
+Loading core <dmem_core> for timing and area information for instance <dmem_inst_1>.
+Loading core <dmem_core> for timing and area information for instance <dmem_inst_2>.
+Loading core <dmem_core> for timing and area information for instance <dmem_inst_3>.
+Loading core <dmem_core> for timing and area information for instance <dmem_inst_4>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 78
+ Flip-Flops                                            : 78
+# Multiplexers                                         : 4
+ 1-bit 4-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <dmem> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block dmem, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 78
+ Flip-Flops                                            : 78
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : dmem.ngr
+Top Level Output File Name         : dmem
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 99
+
+Cell Usage :
+# BELS                             : 12
+#      GND                         : 4
+#      LUT4                        : 4
+#      VCC                         : 4
+# FlipFlops/Latches                : 78
+#      FD                          : 78
+# RAMS                             : 4
+#      RAMB16_S18_S18              : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 78
+#      IBUF                        : 46
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       47  out of   4656     1%  
+ Number of Slice Flip Flops:             78  out of   9312     0%  
+ Number of 4 input LUTs:                  4  out of   9312     0%  
+ Number of IOs:                          99
+ Number of bonded IOBs:                  79  out of    232    34%  
+ Number of BRAMs:                         4  out of     20    20%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                               | Load  |
+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                | BUFGP                                                                                                                               | 82    |
+dmem_inst_1/N1                     | NONE(dmem_inst_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram)| 1     |
+dmem_inst_2/N1                     | NONE(dmem_inst_2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram)| 1     |
+dmem_inst_3/N1                     | NONE(dmem_inst_3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram)| 1     |
+dmem_inst_4/N1                     | NONE(dmem_inst_4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram)| 1     |
+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 3.061ns (Maximum Frequency: 326.691MHz)
+   Minimum input arrival time before clock: 2.637ns
+   Maximum output required time after clock: 4.040ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.061ns (frequency: 326.691MHz)
+  Total number of paths / destination ports: 108 / 108
+-------------------------------------------------------------------------
+Delay:               3.061ns (Levels of Logic = 1)
+  Source:            dmem_inst_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram (RAM)
+  Destination:       outdata_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: dmem_inst_1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram to outdata_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S18_S18:CLKA->DOA0    1   2.436   0.357  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram (douta<0>)
+     end scope: 'dmem_inst_1'
+     FD:D                      0.268          outdata_0
+    ----------------------------------------
+    Total                      3.061ns (2.704ns logic, 0.357ns route)
+                                       (88.3% logic, 11.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 58 / 46
+-------------------------------------------------------------------------
+Offset:              2.637ns (Levels of Logic = 2)
+  Source:            we<0> (PAD)
+  Destination:       wea (FF)
+  Destination Clock: clk rising
+
+  Data Path: we<0> to wea
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.106   0.651  we_0_IBUF (we_0_IBUF)
+     LUT4:I0->O            1   0.612   0.000  Mmux_wec_mux000011 (wec_mux0000)
+     FD:D                      0.268          wec
+    ----------------------------------------
+    Total                      2.637ns (1.986ns logic, 0.651ns route)
+                                       (75.3% logic, 24.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            outdata_31 (FF)
+  Destination:       outdata<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: outdata_31 to outdata<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.514   0.357  outdata_31 (outdata_31)
+     OBUF:I->O                 3.169          outdata_31_OBUF (outdata<31>)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 4.43 secs
+ 
+--> 
+
+
+Total memory usage is 521376 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

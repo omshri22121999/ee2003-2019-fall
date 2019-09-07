@@ -1,0 +1,16 @@
+# Output products list for <imem_core>
+imem_core/blk_mem_gen_v7_3_readme.txt
+imem_core/doc/blk_mem_gen_v7_3_vinfo.html
+imem_core/doc/pg058-blk-mem-gen.pdf
+imem_core.asy
+imem_core.gise
+imem_core.mif
+imem_core.ngc
+imem_core.sym
+imem_core.v
+imem_core.veo
+imem_core.xco
+imem_core.xise
+imem_core_flist.txt
+imem_core_xmdf.tcl
+summary.log

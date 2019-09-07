@@ -1,0 +1,16 @@
+# Output products list for <dmem_core>
+_xmsgs/pn_parser.xmsgs
+dmem_core/blk_mem_gen_v7_3_readme.txt
+dmem_core/doc/blk_mem_gen_v7_3_vinfo.html
+dmem_core/doc/pg058-blk-mem-gen.pdf
+dmem_core.asy
+dmem_core.gise
+dmem_core.ngc
+dmem_core.sym
+dmem_core.v
+dmem_core.veo
+dmem_core.xco
+dmem_core.xise
+dmem_core_flist.txt
+dmem_core_xmdf.tcl
+summary.log

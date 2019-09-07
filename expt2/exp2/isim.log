@@ -1,0 +1,50 @@
+ISim log file
+Running: /home/omshripc/Sem 5/EE2003/ISE/expt2/exp2/testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/omshripc/Sem 5/EE2003/ISE/expt2/exp2/testbench_isim_beh.wdb 
+ISim P.20131013 (signature 0xfbc00daa)
+This is a Full version of ISim.
+WARNING:  For instance imem_inst/imem_inst/, width 32 of formal port dina is not equal to width 1 of actual constant.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 2000 ns
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module testbench.imem_inst.imem_inst.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator CORE Generator module testbench.dmem_inst.dmem_inst_1.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator CORE Generator module testbench.dmem_inst.dmem_inst_2.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator CORE Generator module testbench.dmem_inst.dmem_inst_3.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator CORE Generator module testbench.dmem_inst.dmem_inst_4.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+IMEM CHECK
+Finished circuit initialization process.
+                  40IMEM Passed i=          0 idata= 678625489 trueval= 678625489
+                  80IMEM Passed i=          1 idata=3764605765 trueval=3764605765
+                 120IMEM Passed i=          2 idata= 821883237 trueval= 821883237
+                 160IMEM Passed i=          3 idata= 297118248 trueval= 297118248
+                 200IMEM Passed i=          4 idata=3557870137 trueval=3557870137
+                 240IMEM Passed i=          5 idata= 972316245 trueval= 972316245
+PASSED
+DMEM CHECK
+                 320DMEM Passed i=          0 out_data= 330260318 trueval= 330260318
+                 440DMEM Passed i=          1 out_data=4054049444 trueval=4054049444
+                 560DMEM Passed i=          2 out_data= 330259038 trueval= 330259038
+                 680DMEM Passed i=          3 out_data=4054049956 trueval=4054049956
+                 800DMEM Passed i=          4 out_data= 332357470 trueval= 332357470
+                 920DMEM Passed i=          5 out_data=4054377124 trueval=4054377124
+PASSED
+REG CHECK
+                1020REG1 Passed i=          0 out_data= 330260318 trueval= 330260318
+                1020REG2 Passed i=          0 out_data=4054049956 trueval=4054049956
+                1100REG1 Passed i=          1 out_data=4054049444 trueval=4054049444
+                1100REG2 Passed i=          1 out_data= 332357470 trueval= 332357470
+                1180REG1 Passed i=          2 out_data= 330259038 trueval= 330259038
+                1180REG2 Passed i=          2 out_data=4054377124 trueval=4054377124
+                1260REG1 Passed i=          3 out_data=4054049956 trueval=4054049956
+                1260REG2 Passed i=          3 out_data= 330260318 trueval= 330260318
+                1340REG1 Passed i=          4 out_data= 332357470 trueval= 332357470
+                1340REG2 Passed i=          4 out_data=4054049444 trueval=4054049444
+                1420REG1 Passed i=          5 out_data=4054377124 trueval=4054377124
+                1420REG2 Passed i=          5 out_data= 330259038 trueval= 330259038
+PASSED
+Stopped at time : 1440 ns : File "/home/omshripc/Sem 5/EE2003/ISE/expt2/testbench.v" Line 233
+# exit 0

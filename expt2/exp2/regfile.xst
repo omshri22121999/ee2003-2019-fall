@@ -1,0 +1,5 @@
+set -tmpdir "/home/omshripc/Sem 5/EE2003/ISE/expt2/exp2/xst/projnav.tmp"
+set -xsthdpdir "/home/omshripc/Sem 5/EE2003/ISE/expt2/exp2/xst"
+elaborate
+-ifn regfile.prj
+-ifmt mixed

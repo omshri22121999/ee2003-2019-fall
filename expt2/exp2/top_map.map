@@ -1,0 +1,999 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Map Application Log File for Design 'top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off
+-c 100 -o top_map.ncd top.ngd top.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Tue Sep  3 22:25:58 2019
+
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net N0 is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[127].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[119].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[20].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[21].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[94].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[86].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[78].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[80].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[72].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[64].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[56].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[48].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[110].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[102].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[120].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[112].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[104].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[92].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[84].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[76].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[68].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[31].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[23].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[71].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[63].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[55].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[47].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[39].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[99].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[96].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[88].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[90].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[82].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[74].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[66].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[58].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[50].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[42].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[34].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[26].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[18].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[122].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[114].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[106].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[41].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[33].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[25].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[17].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[98].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[121].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[113].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[105].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[93].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[85].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[77].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[69].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ila_control<13> is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[51].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[43].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[35].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[27].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[19].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[100].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[124].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[116].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[108].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[123].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[115].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[107].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[95].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[87].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[79].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[30].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[22].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[61].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[53].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[45].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[37].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[29].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[126].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[118].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[101].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[81].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[73].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[65].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[57].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[49].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[60].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[52].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[44].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[36].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[28].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[111].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[103].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[40].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[32].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[24].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[16].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[97].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[89].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[91].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[83].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[75].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[67].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[59].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[125].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[117].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[109].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[70].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[62].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[54].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[46].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_instance/U0/I_VIO/GEN_SYNC_IN[38].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[142].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[138].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[134].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[130].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[126].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[122].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[118].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[114].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[110].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[106].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[102].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[98].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[94].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[90].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[86].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[82].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[78].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[30].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[26].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[22].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[18].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[14].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[10].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[143].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[139].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[135].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[131].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[127].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[123].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[119].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[115].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[111].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[107].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[103].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[99].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[95].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[91].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[87].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[83].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[79].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[31].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[27].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[23].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[19].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[15].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[11].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[144].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[140].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[136].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[132].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[128].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[124].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[120].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[116].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[112].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[108].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[104].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[100].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[92].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[88].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[84].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[80].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[76].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[28].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[24].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[20].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[16].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[12].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_UPDATE_OUT[289].UPDATE_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[141].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[137].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[133].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[129].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[125].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[121].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[117].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[113].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[109].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[105].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[101].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[93].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[89].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[85].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[81].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[77].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[29].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[25].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[21].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[17].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <vio_instance/U0/I_VIO/GEN_SYNC_OUT[13].SYNC_OUT_CELL/out_temp> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<imem_instance/imem_inst/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp18x18.ram.A>:<RAMB16
+   _RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<imem_instance/imem_inst/U0/xst_blk_mem_generator/gnativebmg.native_blk
+   _mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp18x18.ram.A>:<RAMB16
+   _RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA4> on
+   block:<dmem_instance/dmem_inst_1/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA5> on
+   block:<dmem_instance/dmem_inst_1/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA6> on
+   block:<dmem_instance/dmem_inst_1/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<dmem_instance/dmem_inst_1/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<dmem_instance/dmem_inst_1/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<dmem_instance/dmem_inst_1/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<dmem_instance/dmem_inst_1/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<dmem_instance/dmem_inst_1/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA4> on
+   block:<dmem_instance/dmem_inst_2/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA5> on
+   block:<dmem_instance/dmem_inst_2/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA6> on
+   block:<dmem_instance/dmem_inst_2/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<dmem_instance/dmem_inst_2/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<dmem_instance/dmem_inst_2/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<dmem_instance/dmem_inst_2/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<dmem_instance/dmem_inst_2/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<dmem_instance/dmem_inst_2/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA4> on
+   block:<dmem_instance/dmem_inst_3/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA5> on
+   block:<dmem_instance/dmem_inst_3/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA6> on
+   block:<dmem_instance/dmem_inst_3/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<dmem_instance/dmem_inst_3/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<dmem_instance/dmem_inst_3/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<dmem_instance/dmem_inst_3/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<dmem_instance/dmem_inst_3/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<dmem_instance/dmem_inst_3/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA4> on
+   block:<dmem_instance/dmem_inst_4/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA5> on
+   block:<dmem_instance/dmem_inst_4/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA6> on
+   block:<dmem_instance/dmem_inst_4/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<dmem_instance/dmem_inst_4/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<dmem_instance/dmem_inst_4/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<dmem_instance/dmem_inst_4/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<dmem_instance/dmem_inst_4/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<dmem_instance/dmem_inst_4/U0/xst_blk_mem_generator/gnativebmg.native_b
+   lk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x18.ram.A>:<RA
+   MB16_RAMB16A>.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:  254
+Logic Utilization:
+  Total Number Slice Registers:       3,243 out of   9,312   34%
+    Number used as Flip Flops:        3,242
+    Number used as Latches:               1
+  Number of 4 input LUTs:             1,493 out of   9,312   16%
+Logic Distribution:
+  Number of occupied Slices:          3,042 out of   4,656   65%
+    Number of Slices containing only related logic:   3,042 out of   3,042 100%
+    Number of Slices containing unrelated logic:          0 out of   3,042   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       1,556 out of   9,312   16%
+    Number used as logic:             1,105
+    Number used as a route-thru:         63
+    Number used as Shift registers:     388
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                  1 out of     232    1%
+  Number of RAMB16s:                     11 out of      20   55%
+  Number of BUFGMUXs:                     2 out of      24    8%
+  Number of BSCANs:                       1 out of       1  100%
+
+  Number of RPM macros:           15
+Average Fanout of Non-Clock Nets:                1.99
+
+Peak Memory Usage:  670 MB
+Total REAL time to MAP completion:  6 secs 
+Total CPU time to MAP completion:   4 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "top_map.mrp" for details.

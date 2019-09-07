@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt2/exp2/imem.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt2/exp2/imem.syr" 
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt2/exp2/imem.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt2/exp2/imem.syr" 
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt2/exp2/imem.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt2/exp2/imem.syr" 

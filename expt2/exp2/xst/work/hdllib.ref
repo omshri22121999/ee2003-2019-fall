@@ -1,0 +1,9 @@
+MO dmem NULL ../dmem.v vlg5F/dmem.bin 1567529722
+MO dmem_core NULL ipcore_dir/dmem_core.v vlg67/dmem__core.bin 1567529722
+MO vio2 NULL ipcore_dir/vio2.v vlg3C/vio2.bin 1567529722
+MO regfile NULL ../regfile.v vlg72/regfile.bin 1567529722
+MO imem NULL ../imem.v vlg50/imem.bin 1567529722
+MO top NULL ../top.v vlg6F/top.bin 1567529722
+MO icon2 NULL ipcore_dir/icon2.v vlg5F/icon2.bin 1567529722
+MO ila2 NULL ipcore_dir/ila2.v vlg68/ila2.bin 1567529722
+MO imem_core NULL ipcore_dir/imem_core.v vlg4C/imem__core.bin 1567529722

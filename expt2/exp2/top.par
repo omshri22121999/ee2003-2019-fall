@@ -1,0 +1,1325 @@
+Release 14.7 par P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+omshripc::  Tue Sep 03 22:26:07 2019
+
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+
+
+Constraints file: top.pcf.
+Loading device for application Rf_Device from file '3s500e.nph' in environment /opt/tools/xilinx/ise/14.7/ISE_DS/ISE/.
+   "top" is an NCD, version 3.2, device xc3s500e, package fg320, speed -5
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.27 2013-10-13".
+
+
+Design Summary Report:
+
+ Number of External IOBs                           1 out of 232     1%
+
+   Number of External Input IOBs                  1
+
+      Number of External Input IBUFs              1
+        Number of LOCed External Input IBUFs      1 out of 1     100%
+
+
+   Number of External Output IOBs                 0
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BSCANs                          1 out of 1     100%
+   Number of BUFGMUXs                        2 out of 24      8%
+   Number of RAMB16s                        11 out of 20     55%
+   Number of Slices                       3042 out of 4656   65%
+      Number of SLICEMs                    278 out of 2328   11%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 3 secs 
+Finished initial Timing Analysis.  REAL time: 3 secs 
+
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[142].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[138].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[134].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[130].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[126].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[122].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[118].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[114].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[110].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[106].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[102].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[98].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[94].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[90].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[86].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[82].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[78].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[30].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[26].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[22].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[18].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[14].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[10].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[143].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[139].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[135].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[131].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[127].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[123].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[119].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[115].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[111].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[107].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[103].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[99].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[95].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[91].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[87].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[83].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[79].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[31].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[27].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[23].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[19].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[15].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[11].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[144].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[140].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[136].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[132].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[128].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[124].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[120].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[116].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[112].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[108].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[104].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[100].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[92].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[88].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[84].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[80].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[76].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[28].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[24].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[20].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[16].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[12].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_UPDATE_OUT[289].UPDATE_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[141].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[137].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[133].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[129].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[125].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[121].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[117].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[113].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[109].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[105].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[101].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[93].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[89].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[85].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[81].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[77].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[29].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[25].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[21].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[17].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal vio_instance/U0/I_VIO/GEN_SYNC_OUT[13].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+
+Starting Placer
+Total REAL time at the beginning of Placer: 3 secs 
+Total CPU  time at the beginning of Placer: 2 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:2fc1517d) REAL time: 4 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:2fc1517d) REAL time: 4 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:ab548c93) REAL time: 4 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:f13e50db) REAL time: 5 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:f13e50db) REAL time: 5 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:f13e50db) REAL time: 5 secs 
+
+Phase 7.8  Global Placement
+...........................
+...............................................................................................................................................
+........................................................................................
+.....
+Phase 7.8  Global Placement (Checksum:b98b792b) REAL time: 8 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:b98b792b) REAL time: 8 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:1d56bda4) REAL time: 9 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:1d56bda4) REAL time: 9 secs 
+
+Total REAL time to Placer completion: 9 secs 
+Total CPU  time to Placer completion: 8 secs 
+Writing design to file top.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 12524 unrouted;      REAL time: 12 secs 
+
+Phase  2  : 8764 unrouted;      REAL time: 13 secs 
+
+Phase  3  : 1032 unrouted;      REAL time: 14 secs 
+
+Phase  4  : 1032 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 16 secs 
+
+Updating file: top.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 16 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 16 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 17 secs 
+WARNING:Route:455 - CLK Net:N0 may have excessive skew because 
+      1 CLK pins and 353 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<20> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<12> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<30> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<22> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<14> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<6> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<7> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<28> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<20> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<12> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<4> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<28> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<9> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<6> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<9> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<1> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<25> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<17> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<2> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<31> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<23> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<15> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<7> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<1> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<21> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<13> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<24> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<16> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<18> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<10> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<2> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<26> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<18> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<25> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<17> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<11> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<10> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<15> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<14> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<23> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<22> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<31> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<30> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<16> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<24> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<5> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<19> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<27> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<29> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<29> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<21> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<13> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<5> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<0> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<19> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<11> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<3> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<0> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<8> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<3> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<8> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<26> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dmem_instance/outdata<27> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:imem_idata<4> may have excessive skew because 
+      1 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ila_control<13> may have excessive skew because 
+      1 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 17 secs 
+Total CPU time to Router completion: 15 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP | BUFGMUX_X1Y11| No   | 1405 |  0.075     |  0.177      |
++---------------------+--------------+------+------+------------+-------------+
+|      ila_control<0> | BUFGMUX_X1Y10| No   | 1043 |  0.075     |  0.177      |
++---------------------+--------------+------+------+------------+-------------+
+|                  N0 |         Local|      |  417 |  0.774     |  2.477      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[127].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[119].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.301      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<20> |         Local|      |    6 |  0.000     |  0.542      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[20].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.465      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<12> |         Local|      |    6 |  0.000     |  0.532      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[12].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  1.206      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[21].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.243      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[13].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.742      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<30> |         Local|      |    6 |  0.000     |  0.858      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<22> |         Local|      |    6 |  0.000     |  1.273      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<14> |         Local|      |    6 |  0.000     |  0.839      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|                a<6> |         Local|      |    6 |  0.000     |  0.820      |
++---------------------+--------------+------+------+------------+-------------+
+|       imem_idata<7> |         Local|      |    6 |  0.000     |  1.035      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[94].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  1.209      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[86].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.973      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[78].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.301      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[80].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.980      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[72].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[64].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.757      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[56].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.742      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[48].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<28> |         Local|      |    6 |  0.000     |  1.372      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<20> |         Local|      |    6 |  0.000     |  1.522      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<12> |         Local|      |    6 |  0.000     |  1.041      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|                a<4> |         Local|      |    6 |  0.000     |  0.612      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<28> |         Local|      |    6 |  0.000     |  1.042      |
++---------------------+--------------+------+------+------------+-------------+
+|       imem_idata<9> |         Local|      |    6 |  0.000     |  1.124      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[110].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[102].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.976      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[7].SYN |              |      |      |            |             |
+| C_IN_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.247      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[120].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.246      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[112].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[104].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.745      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[92].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.246      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[84].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.941      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[76].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.980      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[68].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|       imem_idata<6> |         Local|      |    6 |  0.000     |  0.562      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[6].SYN |              |      |      |            |             |
+| C_IN_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|                a<9> |         Local|      |    6 |  0.000     |  0.815      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|                a<1> |         Local|      |    6 |  0.000     |  0.884      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<25> |         Local|      |    6 |  0.000     |  0.889      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<17> |         Local|      |    6 |  0.000     |  0.953      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[31].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[23].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.980      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[15].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.962      |
++---------------------+--------------+------+------+------------+-------------+
+|       imem_idata<2> |         Local|      |    6 |  0.000     |  0.367      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[71].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.980      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<31> |         Local|      |    6 |  0.000     |  1.086      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[63].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.745      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<23> |         Local|      |    6 |  0.000     |  0.670      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[55].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<15> |         Local|      |    6 |  0.000     |  0.930      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[47].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.718      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|                a<7> |         Local|      |    6 |  0.000     |  0.835      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[39].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[99].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.980      |
++---------------------+--------------+------+------+------------+-------------+
+|       imem_idata<1> |         Local|      |    6 |  0.000     |  0.592      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[1].SYN |              |      |      |            |             |
+| C_IN_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<21> |         Local|      |    6 |  0.000     |  1.454      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<13> |         Local|      |    6 |  0.000     |  0.895      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[96].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.467      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[88].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  1.227      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[90].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[82].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.246      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[74].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.246      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[66].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[58].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.469      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<24> |         Local|      |    6 |  0.000     |  0.630      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<16> |         Local|      |    6 |  0.000     |  1.098      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<18> |         Local|      |    6 |  0.000     |  0.740      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[50].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<10> |         Local|      |    6 |  0.000     |  1.417      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[42].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  1.212      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|                a<2> |         Local|      |    6 |  0.000     |  0.898      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[34].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.246      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<26> |         Local|      |    6 |  0.000     |  1.585      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[26].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.247      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<18> |         Local|      |    6 |  0.000     |  0.707      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[18].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.763      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[9].SYN |              |      |      |            |             |
+| C_IN_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.249      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[122].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[114].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[106].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.976      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<25> |         Local|      |    6 |  0.000     |  0.896      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<17> |         Local|      |    6 |  0.000     |  0.603      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[41].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.938      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[33].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.980      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[25].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[17].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<11> |         Local|      |    6 |  0.000     |  0.765      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<10> |         Local|      |    6 |  0.000     |  1.054      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[98].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  1.115      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[0].SYN |              |      |      |            |             |
+| C_IN_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.301      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<15> |         Local|      |    6 |  0.000     |  1.303      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<14> |         Local|      |    6 |  0.000     |  0.933      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<23> |         Local|      |    6 |  0.000     |  1.359      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<22> |         Local|      |    6 |  0.000     |  0.969      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<31> |         Local|      |    6 |  0.000     |  2.219      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<30> |         Local|      |    6 |  0.000     |  1.428      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<16> |         Local|      |    6 |  0.000     |  1.298      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<24> |         Local|      |    6 |  0.000     |  0.911      |
++---------------------+--------------+------+------+------------+-------------+
+|       imem_idata<5> |         Local|      |    6 |  0.000     |  1.150      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[121].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.935      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[113].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[105].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.250      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[93].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.986      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[85].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.941      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[77].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.980      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[69].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.944      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<19> |         Local|      |    6 |  0.000     |  1.152      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<27> |         Local|      |    6 |  0.000     |  1.299      |
++---------------------+--------------+------+------+------------+-------------+
+|      imem_idata<29> |         Local|      |    6 |  0.000     |  1.121      |
++---------------------+--------------+------+------+------------+-------------+
+|     ila_control<13> |         Local|      |    5 |  0.000     |  0.790      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[51].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.301      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[43].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[35].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[27].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[19].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.977      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[100].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.301      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[2].SYN |              |      |      |            |             |
+| C_IN_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.301      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<29> |         Local|      |    6 |  0.000     |  0.797      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<21> |         Local|      |    6 |  0.000     |  1.067      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<13> |         Local|      |    6 |  0.000     |  1.021      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|                a<5> |         Local|      |    6 |  0.000     |  1.094      |
++---------------------+--------------+------+------+------------+-------------+
+|       imem_idata<0> |         Local|      |    6 |  0.000     |  0.842      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<19> |         Local|      |    6 |  0.000     |  0.939      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<11> |         Local|      |    6 |  0.000     |  0.818      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|                a<3> |         Local|      |    6 |  0.000     |  0.834      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[124].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  1.212      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[116].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.745      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[108].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.497      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[123].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.938      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[115].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  1.465      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[107].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.305      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[95].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.247      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[87].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[79].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.246      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[10].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.981      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[30].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.742      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[22].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[14].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[61].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.742      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[53].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.748      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[45].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[37].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[29].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.980      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|                a<0> |         Local|      |    6 |  0.000     |  1.122      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|                a<8> |         Local|      |    6 |  0.000     |  0.817      |
++---------------------+--------------+------+------+------------+-------------+
+|       imem_idata<3> |         Local|      |    6 |  0.000     |  1.209      |
++---------------------+--------------+------+------+------------+-------------+
+|       imem_idata<8> |         Local|      |    6 |  0.000     |  0.837      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[4].SYN |              |      |      |            |             |
+| C_IN_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[126].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.938      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[118].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.467      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[8].SYN |              |      |      |            |             |
+| C_IN_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.944      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[101].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.247      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[81].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.511      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[73].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[65].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.981      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[57].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[49].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[3].SYN |              |      |      |            |             |
+| C_IN_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.745      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[60].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[52].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.714      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[44].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[36].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.301      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[28].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<26> |         Local|      |    6 |  0.000     |  0.871      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[111].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[103].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.745      |
++---------------------+--------------+------+------+------------+-------------+
+|dmem_instance/outdat |              |      |      |            |             |
+|               a<27> |         Local|      |    6 |  0.000     |  0.628      |
++---------------------+--------------+------+------+------------+-------------+
+|       imem_idata<4> |         Local|      |    6 |  0.000     |  1.358      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[40].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.246      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[32].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.980      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[24].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.977      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[16].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[97].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.739      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[89].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.467      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[91].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.305      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[83].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.301      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[75].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.467      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[67].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.301      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[59].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[125].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.938      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[117].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[109].S |              |      |      |            |             |
+|YNC_IN_CELL/user_in_ |              |      |      |            |             |
+|                   n |         Local|      |    1 |  0.000     |  0.745      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[11].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.980      |
++---------------------+--------------+------+------+------------+-------------+
+|icon_instance/U0/iUP |              |      |      |            |             |
+|            DATE_OUT |         Local|      |    1 |  0.000     |  1.693      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[5].SYN |              |      |      |            |             |
+| C_IN_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.742      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[70].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[62].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.980      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[54].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[46].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.981      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_instance/U0/I_VI |              |      |      |            |             |
+|O/GEN_SYNC_IN[38].SY |              |      |      |            |             |
+|NC_IN_CELL/user_in_n |              |      |      |            |             |
+|                     |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 2
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |     9.791ns|     5.209ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    13.434ns|     1.566ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    18.535ns|    11.465ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.631ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D2_TO_T2_path" TIG               | SETUP       |         N/A|     5.823ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J2_TO_D2_path" TIG               | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J3_TO_D2_path" TIG               | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J4_TO_D2_path" TIG               | MAXDELAY    |         N/A|     4.806ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     8.934ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     5.811ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 90 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 17 secs 
+Total CPU time to PAR completion: 16 secs 
+
+Peak Memory Usage:  678 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 158
+Number of info messages: 0
+
+Writing design to file top.ncd
+
+
+
+PAR done!
