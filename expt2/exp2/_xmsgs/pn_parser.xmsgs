@@ -8,5 +8,29 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/omshripc/Sem 5/EE2003/ISE/expt2/dmem.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">/home/omshripc/Sem 5/EE2003/ISE/expt2/dmem.v</arg>&quot; Line <arg fmt="%d" index="2">13</arg>. <arg fmt="%s" index="3">Include file found: &apos;/home/omshripc/Sem 5/EE2003/ISE/expt2/params.v&apos; in file &quot;/home/omshripc/Sem 5/EE2003/ISE/expt2/dmem.v&quot; line 13
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/omshripc/Sem 5/EE2003/ISE/expt2/imem.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">/home/omshripc/Sem 5/EE2003/ISE/expt2/imem.v</arg>&quot; Line <arg fmt="%d" index="2">13</arg>. <arg fmt="%s" index="3">Include file found: &apos;/home/omshripc/Sem 5/EE2003/ISE/expt2/params.v&apos; in file &quot;/home/omshripc/Sem 5/EE2003/ISE/expt2/imem.v&quot; line 13
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/omshripc/Sem 5/EE2003/ISE/expt2/regfile.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">/home/omshripc/Sem 5/EE2003/ISE/expt2/regfile.v</arg>&quot; Line <arg fmt="%d" index="2">13</arg>. <arg fmt="%s" index="3">Include file found: &apos;/home/omshripc/Sem 5/EE2003/ISE/expt2/params.v&apos; in file &quot;/home/omshripc/Sem 5/EE2003/ISE/expt2/regfile.v&quot; line 13
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/omshripc/Sem 5/EE2003/ISE/expt2/top.v&quot; into library work</arg>
+</msg>
+
 </messages>
 
