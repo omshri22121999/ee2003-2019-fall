@@ -1,0 +1,36 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../IMEM.v" in library work
+Module <imem> compiled
+ERROR:HDLCompilers:132 - "../IMEM.v" line 9 Argument 1 (input) passed to system task '$readmemh' is illegal
+ERROR:HDLCompilers:132 - "../IMEM.v" line 9 Argument 2 (input) passed to system task '$readmemh' is illegal
+Analysis of file <"imem.prj"> failed.
+--> 
+
+
+Total memory usage is 470708 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
