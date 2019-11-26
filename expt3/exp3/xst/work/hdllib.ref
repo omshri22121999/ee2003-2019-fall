@@ -1,1 +1,15 @@
-MO imem NULL ../IMEM.v vlg50/imem.bin 1570011275
+MO Control NULL ../Control.v vlg41/_control.bin 1572928449
+MO Registers NULL ../Registers.v vlg20/_registers.bin 1572928449
+MO vio3 NULL ipcore_dir/vio3.v vlg3D/vio3.bin 1572843338
+MO CPU NULL ../CPU.v vlg70/_c_p_u.bin 1572844987
+MO DMEM NULL ../DMEM.v vlg5F/_d_m_e_m.bin 1572928449
+MO vio3_clk NULL ipcore_dir/vio3_clk.v vlg02/vio3__clk.bin 1572928449
+MO DMEM_Parser NULL ../DMEM_Parser.v vlg3B/_d_m_e_m___parser.bin 1572928449
+MO REDUCED_CPU NULL REDUCED_CPU.v vlg2B/_r_e_d_u_c_e_d___c_p_u.bin 1572928449
+MO IMEM NULL ../IMEM.v vlg50/_i_m_e_m.bin 1572928449
+MO top NULL ../top.v vlg6F/top.bin 1572843338
+MO ALU_Control NULL ../ALU_Control.v vlg5E/_a_l_u___control.bin 1572928449
+MO Reg_Parser NULL ../Reg_Parser.v vlg42/_reg___parser.bin 1572928449
+MO icon3 NULL ipcore_dir/icon3.v vlg60/icon3.bin 1572928449
+MO ALU NULL ../ALU.v vlg2A/_a_l_u.bin 1572928449
+MO top_clk NULL top_clk.v vlg14/top__clk.bin 1572928449

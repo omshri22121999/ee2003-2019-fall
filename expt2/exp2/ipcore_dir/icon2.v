@@ -8,7 +8,7 @@
 // \   \   \/     Version    : 14.7
 //  \   \         Application: Xilinx CORE Generator
 //  /   /         Filename   : icon2.v
-// /___/   /\     Timestamp  : Sat Aug 31 18:37:39 IST 2019
+// /___/   /\     Timestamp  : Tue Oct 29 09:41:41 IST 2019
 // \   \  /  \
 //  \___\/\___\
 //
@@ -19,11 +19,9 @@
 `timescale 1ns/1ps
 
 module icon2(
-    CONTROL0,
-    CONTROL1) /* synthesis syn_black_box syn_noprune=1 */;
+    CONTROL0) /* synthesis syn_black_box syn_noprune=1 */;
 
 
 inout [35 : 0] CONTROL0;
-inout [35 : 0] CONTROL1;
 
 endmodule

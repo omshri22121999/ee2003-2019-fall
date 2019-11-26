@@ -1,0 +1,6 @@
+verilog isim_temp "../peripheral.v"
+verilog isim_temp "../multiply.v"
+verilog isim_temp "../dmem_decoder.v"
+verilog isim_temp "../dmem.v"
+verilog isim_temp "../pipeline_mem.v"
+verilog isim_temp "/opt/tools/xilinx/ise/14.7/ISE_DS/ISE//verilog/src/glbl.v"

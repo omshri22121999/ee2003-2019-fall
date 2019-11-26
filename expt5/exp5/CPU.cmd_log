@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt5/exp5/CPU.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt5/exp5/CPU.syr" 

@@ -1,0 +1,12 @@
+# Output products list for <icon3>
+icon3.asy
+icon3.gise
+icon3.ngc
+icon3.sym
+icon3.v
+icon3.veo
+icon3.xco
+icon3.xise
+icon3_flist.txt
+icon3_readme.txt
+icon3_xmdf.tcl

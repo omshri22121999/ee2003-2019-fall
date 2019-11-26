@@ -1,0 +1,477 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: CPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CPU.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CPU"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : CPU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../rf.v" in library work
+Compiling verilog file "../peripheral.v" in library work
+Module <rf> compiled
+Compiling verilog file "../dmem_decoder.v" in library work
+Module <peripheral> compiled
+Compiling verilog file "../dmem.v" in library work
+Module <dmem_decoder> compiled
+Compiling verilog file "../alu_32_bit.v" in library work
+Module <dmem> compiled
+Compiling verilog file "../pipeline_wb.v" in library work
+Module <alu_32_bit> compiled
+Compiling verilog file "../pipeline_mem.v" in library work
+Module <pipeline_wb> compiled
+Compiling verilog file "../pipeline_if.v" in library work
+Module <pipeline_mem> compiled
+Compiling verilog file "../pipeline_id.v" in library work
+Module <pipeline_if> compiled
+Compiling verilog file "../pipeline_ex.v" in library work
+Module <pipeline_id> compiled
+Compiling verilog file "../CPU.v" in library work
+Module <pipeline_ex> compiled
+Module <CPU> compiled
+No errors in compilation
+Analysis of file <"CPU.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <CPU> in library <work>.
+
+Analyzing hierarchy for module <pipeline_if> in library <work>.
+
+Analyzing hierarchy for module <pipeline_id> in library <work>.
+
+Analyzing hierarchy for module <pipeline_ex> in library <work>.
+
+Analyzing hierarchy for module <pipeline_mem> in library <work>.
+
+Analyzing hierarchy for module <pipeline_wb> in library <work>.
+
+Analyzing hierarchy for module <alu_32_bit> in library <work>.
+
+Analyzing hierarchy for module <rf> in library <work>.
+
+Analyzing hierarchy for module <dmem> in library <work>.
+
+Analyzing hierarchy for module <peripheral> in library <work>.
+
+Analyzing hierarchy for module <dmem_decoder> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <CPU>.
+Module <CPU> is correct for synthesis.
+ 
+Analyzing module <pipeline_if> in library <work>.
+INFO:Xst:2546 - "../pipeline_if.v" line 60: reading initialization file "imem_peri2_ini.mem".
+INFO:Xst:1433 - Contents of array <m> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Module <pipeline_if> is correct for synthesis.
+ 
+Analyzing module <pipeline_id> in library <work>.
+Module <pipeline_id> is correct for synthesis.
+ 
+Analyzing module <pipeline_ex> in library <work>.
+Module <pipeline_ex> is correct for synthesis.
+ 
+Analyzing module <alu_32_bit> in library <work>.
+Module <alu_32_bit> is correct for synthesis.
+ 
+Analyzing module <rf> in library <work>.
+Module <rf> is correct for synthesis.
+ 
+Analyzing module <pipeline_mem> in library <work>.
+Module <pipeline_mem> is correct for synthesis.
+ 
+Analyzing module <dmem> in library <work>.
+INFO:Xst:2546 - "../dmem.v" line 33: reading initialization file "dmem_ini.mem".
+INFO:Xst:2546 - "../dmem.v" line 59: reading initialization file "dmem_ini.mem".
+INFO:Xst:1607 - Contents of array <m_r> may be accessed with an index that does not cover the full array size.
+INFO:Xst:1607 - Contents of array <m_r> may be accessed with an index that does not cover the full array size.
+INFO:Xst:1607 - Contents of array <m_r> may be accessed with an index that does not cover the full array size.
+INFO:Xst:1607 - Contents of array <m_r> may be accessed with an index that does not cover the full array size.
+Module <dmem> is correct for synthesis.
+ 
+Analyzing module <peripheral> in library <work>.
+Module <peripheral> is correct for synthesis.
+ 
+Analyzing module <dmem_decoder> in library <work>.
+Module <dmem_decoder> is correct for synthesis.
+ 
+Analyzing module <pipeline_wb> in library <work>.
+Module <pipeline_wb> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <pipeline_if>.
+    Related source file is "../pipeline_if.v".
+WARNING:Xst:1781 - Signal <m> is used but never assigned. Tied to default value.
+    Found 32x32-bit ROM for signal <idata>.
+    Found 32-bit register for signal <instr_o_r>.
+    Found 5-bit comparator equal for signal <pc_next_w$cmp_eq0000> created at line 111.
+    Found 5-bit comparator equal for signal <pc_next_w$cmp_eq0004> created at line 111.
+    Found 32-bit adder for signal <pc_next_w$share0000>.
+    Found 32-bit register for signal <pc_o_r>.
+    Found 32-bit register for signal <pc_r>.
+    Found 1-bit register for signal <rd_previous_activate_r>.
+    Found 5-bit register for signal <rd_previous_r>.
+    Found 1-bit register for signal <stall_load_o_r>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred 103 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <pipeline_if> synthesized.
+
+
+Synthesizing Unit <pipeline_id>.
+    Related source file is "../pipeline_id.v".
+WARNING:Xst:647 - Input <instr_i<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <rs2_rd_yes_w> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rs2_rd_2_yes_w> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rs1_rd_yes_w> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rs1_rd_2_yes_w> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <main_opcode_previous_two_r<2:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_op_w_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_op_w_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_op_w_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_op_w_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 4-bit register for signal <alu_op_o_r>.
+    Found 32-bit register for signal <imm_o_r>.
+    Found 22-bit adder for signal <imm_w$sub0000> created at line 258.
+    Found 21-bit adder for signal <imm_w$sub0001> created at line 274.
+    Found 13-bit adder for signal <imm_w$sub0002> created at line 278.
+    Found 6-bit register for signal <main_opcode_o_r>.
+    Found 6-bit register for signal <main_opcode_previous_two_r>.
+    Found 5-bit comparator equal for signal <old_rs1_rd_2_yes_w_3$cmp_eq0000> created at line 127.
+    Found 5-bit comparator equal for signal <old_rs1_rd_yes_w_2$cmp_eq0000> created at line 118.
+    Found 5-bit comparator equal for signal <old_rs2_rd_2_yes_w_5$cmp_eq0000> created at line 145.
+    Found 5-bit comparator equal for signal <old_rs2_rd_yes_w_4$cmp_eq0003> created at line 136.
+    Found 32-bit register for signal <pc_o_r>.
+    Found 5-bit register for signal <rd_o_r>.
+    Found 5-bit register for signal <rd_previous_two_r>.
+    Found 4-bit register for signal <reg_forwarding_type_o_r>.
+    Found 5-bit register for signal <rs1_o_r>.
+    Found 5-bit register for signal <rs2_o_r>.
+    Found 1-bit register for signal <stall_load_o_r>.
+    Summary:
+	inferred 105 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <pipeline_id> synthesized.
+
+
+Synthesizing Unit <pipeline_wb>.
+    Related source file is "../pipeline_wb.v".
+WARNING:Xst:647 - Input <opcode_i<2:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 32-bit latch for signal <reg_data_r>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_we_w>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <pipeline_wb> synthesized.
+
+
+Synthesizing Unit <alu_32_bit>.
+    Related source file is "../alu_32_bit.v".
+    Found 32-bit 16-to-1 multiplexer for signal <out_w>.
+    Found 32-bit addsub for signal <out_w$addsub0000>.
+    Found 32-bit comparator equal for signal <out_w$cmp_eq0000> created at line 43.
+    Found 32-bit comparator greatequal for signal <out_w$cmp_ge0000> created at line 46.
+    Found 32-bit comparator greatequal for signal <out_w$cmp_ge0001> created at line 48.
+    Found 32-bit comparator less for signal <out_w$cmp_lt0000> created at line 34.
+    Found 32-bit comparator less for signal <out_w$cmp_lt0001> created at line 35.
+    Found 32-bit comparator not equal for signal <out_w$cmp_ne0000> created at line 44.
+    Found 32-bit shifter logical left for signal <out_w$shift0000> created at line 33.
+    Found 32-bit shifter logical right for signal <out_w$shift0001> created at line 37.
+    Found 32-bit shifter arithmetic right for signal <out_w$shift0002> created at line 41.
+    Found 32-bit xor2 for signal <out_w$xor0000> created at line 36.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred  32 Multiplexer(s).
+	inferred   3 Combinational logic shifter(s).
+Unit <alu_32_bit> synthesized.
+
+
+Synthesizing Unit <rf>.
+    Related source file is "../rf.v".
+    Found 32-bit 32-to-1 multiplexer for signal <rv1>.
+    Found 32-bit 32-to-1 multiplexer for signal <rv2>.
+    Found 1024-bit register for signal <register_field>.
+    Found 32-bit 4-to-1 multiplexer for signal <register_field_0$mux0000>.
+INFO:Xst:738 - HDL ADVISOR - 1024 flip-flops were inferred for signal <register_field>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred 128 Multiplexer(s).
+Unit <rf> synthesized.
+
+
+Synthesizing Unit <dmem>.
+    Related source file is "../dmem.v".
+WARNING:Xst:646 - Signal <add3_w<31:7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <add2_w<31:7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <add1_w<31:7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <add0_w<31:7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit adder for signal <add1_w>.
+    Found 32-bit adder for signal <add2_w>.
+    Found 32-bit adder for signal <add3_w>.
+    Found 8-bit 128-to-1 multiplexer for signal <drdata_o$varindex0000> created at line 49.
+    Found 8-bit 128-to-1 multiplexer for signal <drdata_o$varindex0001> created at line 49.
+    Found 8-bit 128-to-1 multiplexer for signal <drdata_o$varindex0002> created at line 49.
+    Found 8-bit 128-to-1 multiplexer for signal <drdata_o$varindex0003> created at line 49.
+    Found 1024-bit register for signal <m_r>.
+INFO:Xst:738 - HDL ADVISOR - 1024 flip-flops were inferred for signal <m_r>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <dmem> synthesized.
+
+
+Synthesizing Unit <peripheral>.
+    Related source file is "../peripheral.v".
+    Found 32-bit up accumulator for signal <accumulator>.
+    Found 32-bit up counter for signal <counter>.
+    Found 32-bit 4-to-1 multiplexer for signal <rdata_w>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Accumulator(s).
+	inferred  32 Multiplexer(s).
+Unit <peripheral> synthesized.
+
+
+Synthesizing Unit <dmem_decoder>.
+    Related source file is "../dmem_decoder.v".
+WARNING:Xst:647 - Input <alu_out_i<31:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <dmem_decoder> synthesized.
+
+
+Synthesizing Unit <pipeline_ex>.
+    Related source file is "../pipeline_ex.v".
+    Register <reg_forwarding_alu_one_r> equivalent to <alu_out_o_r> has been removed
+    Found 32-bit 4-to-1 multiplexer for signal <alu_out_main>.
+    Found 32-bit adder for signal <alu_out_main$add0000> created at line 233.
+    Found 32-bit adder for signal <alu_out_main$addsub0000> created at line 235.
+    Found 32-bit 4-to-1 multiplexer for signal <alu_out_main$mux0000>.
+    Found 32-bit register for signal <alu_out_o_r>.
+    Found 1-bit register for signal <if_previous_branch>.
+    Found 1-bit register for signal <if_previous_two_branch>.
+    Found 6-bit register for signal <main_opcode_o_r>.
+    Found 1-bit register for signal <main_stall_o_r>.
+    Found 32-bit adder for signal <pc_new_o_wires$addsub0000> created at line 216.
+    Found 5-bit register for signal <rd_o_r>.
+    Found 32-bit register for signal <reg_forwarding_alu_two_r>.
+    Found 32-bit register for signal <wdata_o_r>.
+    Summary:
+	inferred 110 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  64 Multiplexer(s).
+Unit <pipeline_ex> synthesized.
+
+
+Synthesizing Unit <pipeline_mem>.
+    Related source file is "../pipeline_mem.v".
+    Found 32-bit register for signal <alu_out_r>.
+    Found 32-bit register for signal <dmem_out_r>.
+    Found 32-bit 4-to-1 multiplexer for signal <dmem_read_w_local$mux0000>.
+    Found 32-bit 4-to-1 multiplexer for signal <dmem_read_w_local$mux0001>.
+    Found 26-bit adder for signal <dmem_read_w_local$sub0000> created at line 77.
+    Found 26-bit adder for signal <dmem_read_w_local$sub0001> created at line 78.
+    Found 26-bit adder for signal <dmem_read_w_local$sub0002> created at line 79.
+    Found 26-bit adder for signal <dmem_read_w_local$sub0003> created at line 80.
+    Found 18-bit adder for signal <dmem_read_w_local$sub0004> created at line 87.
+    Found 18-bit adder for signal <dmem_read_w_local$sub0005> created at line 88.
+    Found 6-bit register for signal <opcode_r>.
+    Found 5-bit register for signal <rd_r>.
+    Found 32-bit comparator greatequal for signal <rf_write_out$cmp_ge0000> created at line 68.
+    Found 1-bit register for signal <stall_r>.
+    Summary:
+	inferred  76 D-type flip-flop(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred  64 Multiplexer(s).
+Unit <pipeline_mem> synthesized.
+
+
+Synthesizing Unit <CPU>.
+    Related source file is "../CPU.v".
+Unit <CPU> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 32x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 17
+ 13-bit adder                                          : 1
+ 18-bit adder                                          : 2
+ 21-bit adder                                          : 1
+ 22-bit adder                                          : 1
+ 26-bit adder                                          : 4
+ 32-bit adder                                          : 7
+ 32-bit addsub                                         : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Accumulators                                         : 1
+ 32-bit up accumulator                                 : 1
+# Registers                                            : 190
+ 1-bit register                                        : 7
+ 32-bit register                                       : 42
+ 4-bit register                                        : 2
+ 5-bit register                                        : 7
+ 6-bit register                                        : 4
+ 8-bit register                                        : 128
+# Latches                                              : 6
+ 1-bit latch                                           : 5
+ 32-bit latch                                          : 1
+# Comparators                                          : 13
+ 32-bit comparator equal                               : 1
+ 32-bit comparator greatequal                          : 3
+ 32-bit comparator less                                : 2
+ 32-bit comparator not equal                           : 1
+ 5-bit comparator equal                                : 6
+# Multiplexers                                         : 14
+ 32-bit 16-to-1 multiplexer                            : 1
+ 32-bit 32-to-1 multiplexer                            : 3
+ 32-bit 4-to-1 multiplexer                             : 6
+ 8-bit 128-to-1 multiplexer                            : 4
+# Logic shifters                                       : 3
+ 32-bit shifter arithmetic right                       : 1
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <rd_previous_r_4> in Unit <IF_STAGE> is equivalent to the following FF/Latch, which will be removed : <instr_o_r_11> 
+INFO:Xst:2261 - The FF/Latch <rd_previous_r_0> in Unit <IF_STAGE> is equivalent to the following FF/Latch, which will be removed : <instr_o_r_7> 
+INFO:Xst:2261 - The FF/Latch <rd_previous_r_3> in Unit <IF_STAGE> is equivalent to the following FF/Latch, which will be removed : <instr_o_r_10> 
+INFO:Xst:2261 - The FF/Latch <rd_previous_r_2> in Unit <IF_STAGE> is equivalent to the following FF/Latch, which will be removed : <instr_o_r_9> 
+INFO:Xst:2261 - The FF/Latch <rd_previous_r_1> in Unit <IF_STAGE> is equivalent to the following FF/Latch, which will be removed : <instr_o_r_8> 
+WARNING:Xst:2677 - Node <instr_o_r_0> of sequential type is unconnected in block <IF_STAGE>.
+WARNING:Xst:2677 - Node <instr_o_r_1> of sequential type is unconnected in block <IF_STAGE>.
+WARNING:Xst:2677 - Node <main_opcode_previous_two_r_0> of sequential type is unconnected in block <ID_STAGE>.
+WARNING:Xst:2677 - Node <main_opcode_previous_two_r_1> of sequential type is unconnected in block <ID_STAGE>.
+WARNING:Xst:2677 - Node <main_opcode_previous_two_r_2> of sequential type is unconnected in block <ID_STAGE>.
+WARNING:Xst:2677 - Node <opcode_r_0> of sequential type is unconnected in block <MEM_STAGE>.
+WARNING:Xst:2677 - Node <opcode_r_1> of sequential type is unconnected in block <MEM_STAGE>.
+WARNING:Xst:2677 - Node <opcode_r_2> of sequential type is unconnected in block <MEM_STAGE>.

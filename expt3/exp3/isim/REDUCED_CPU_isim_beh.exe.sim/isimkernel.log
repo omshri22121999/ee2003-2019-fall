@@ -1,0 +1,28 @@
+Command line:
+   REDUCED_CPU_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  33203
+
+Wed Oct 30 08:41:42 2019
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 268.694 Meg
+
+ Total Signals          : 54
+ Total Nets             : 1025
+ Total Signal Drivers   : 70
+ Total Blocks           : 8
+ Total Primitive Blocks : 7
+ Total Processes        : 79
+ Total Traceable Variables  : 60
+ Total Scalar Nets and Variables : 2918
+
+ Total Simulation Time: 0.06 sec
+
+ Current Memory Usage: 344.195 Meg
+
+Wed Oct 30 08:41:45 2019
+

@@ -1,5 +1,6 @@
 verilog work "ipcore_dir/vio1.v"
 verilog work "ipcore_dir/ila1.v"
 verilog work "ipcore_dir/icon1.v"
+verilog work "../dummy-decoder.v"
 verilog work "../alu32.v"
 verilog work "../top.v"

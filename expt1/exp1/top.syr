@@ -115,9 +115,12 @@ Compiling verilog file "ipcore_dir/ila1.v" in library work
 Module <vio1> compiled
 Compiling verilog file "ipcore_dir/icon1.v" in library work
 Module <ila1> compiled
-Compiling verilog file "../alu32.v" in library work
+Compiling verilog file "../dummy-decoder.v" in library work
 Compiling verilog include file "parameters.v"
 Module <icon1> compiled
+Compiling verilog file "../alu32.v" in library work
+Compiling verilog include file "parameters.v"
+Module <DummyDecoder> compiled
 Compiling verilog file "../top.v" in library work
 Compiling verilog include file "parameters.v"
 Module <ALU32> compiled
@@ -133,14 +136,16 @@ Analyzing hierarchy for module <top> in library <work>.
 
 Analyzing hierarchy for module <ALU32> in library <work>.
 
+Analyzing hierarchy for module <DummyDecoder> in library <work>.
+
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <top>.
-WARNING:Xst:2211 - "ipcore_dir/icon1.v" line 41: Instantiating black box module <icon1>.
-WARNING:Xst:2211 - "ipcore_dir/vio1.v" line 46: Instantiating black box module <vio1>.
-WARNING:Xst:2211 - "ipcore_dir/ila1.v" line 52: Instantiating black box module <ila1>.
+WARNING:Xst:2211 - "ipcore_dir/icon1.v" line 46: Instantiating black box module <icon1>.
+WARNING:Xst:2211 - "ipcore_dir/vio1.v" line 51: Instantiating black box module <vio1>.
+WARNING:Xst:2211 - "ipcore_dir/ila1.v" line 57: Instantiating black box module <ila1>.
 Module <top> is correct for synthesis.
  
     Set user-defined property "SYN_BLACK_BOX =  1" for instance <icon_inst> in unit <top>.
@@ -151,6 +156,9 @@ Module <top> is correct for synthesis.
     Set user-defined property "SYN_NOPRUNE =  1" for instance <ila_inst> in unit <top>.
 Analyzing module <ALU32> in library <work>.
 Module <ALU32> is correct for synthesis.
+ 
+Analyzing module <DummyDecoder> in library <work>.
+Module <DummyDecoder> is correct for synthesis.
  
     Set property "SYN_NOPRUNE = 1" for unit <icon1>.
     Set property "SYN_NOPRUNE = 1" for unit <vio1>.
@@ -176,6 +184,15 @@ Synthesizing Unit <ALU32>.
 	inferred   2 Comparator(s).
 	inferred   3 Combinational logic shifter(s).
 Unit <ALU32> synthesized.
+
+
+Synthesizing Unit <DummyDecoder>.
+    Related source file is "../dummy-decoder.v".
+WARNING:Xst:647 - Input <instr<31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <instr<29:21>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <instr<19:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <instr<11:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <DummyDecoder> synthesized.
 
 
 Synthesizing Unit <top>.
@@ -239,7 +256,7 @@ Optimizing unit <ALU32> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 20.
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 22.
 
 Final Macro Processing ...
 
@@ -274,30 +291,30 @@ Design Statistics
 # IOs                              : 1
 
 Cell Usage :
-# BELS                             : 1335
+# BELS                             : 1424
 #      GND                         : 4
 #      INV                         : 40
 #      LUT1                        : 57
-#      LUT2                        : 107
-#      LUT3                        : 323
+#      LUT2                        : 119
+#      LUT3                        : 339
 #      LUT3_L                      : 1
-#      LUT4                        : 437
+#      LUT4                        : 497
 #      LUT4_L                      : 1
 #      MUXCY                       : 104
 #      MUXCY_L                     : 75
-#      MUXF5                       : 83
+#      MUXF5                       : 84
 #      MUXF6                       : 10
 #      VCC                         : 4
 #      XORCY                       : 89
-# FlipFlops/Latches                : 795
+# FlipFlops/Latches                : 899
 #      FD                          : 32
 #      FDC                         : 1
 #      FDCE                        : 88
-#      FDE                         : 375
+#      FDE                         : 453
 #      FDP                         : 33
 #      FDPE                        : 66
 #      FDR                         : 43
-#      FDRE                        : 142
+#      FDRE                        : 168
 #      FDRS                        : 4
 #      FDS                         : 10
 #      LDC                         : 1
@@ -320,10 +337,10 @@ Device utilization summary:
 
 Selected Device : 3s500eft256-5 
 
- Number of Slices:                      889  out of   4656    19%  
- Number of Slice Flip Flops:            795  out of   9312     8%  
- Number of 4 input LUTs:               1065  out of   9312    11%  
-    Number used as logic:               966
+ Number of Slices:                      995  out of   4656    21%  
+ Number of Slice Flip Flops:            899  out of   9312     9%  
+ Number of 4 input LUTs:               1153  out of   9312    12%  
+    Number used as logic:              1054
     Number used as Shift registers:      99
  Number of IOs:                           1
  Number of bonded IOBs:                   1  out of    190     0%  
@@ -351,40 +368,40 @@ Clock Information:
 --------------------------------------------------------------------------------+-------------------------------------------------------------------+-------+
 Clock Signal                                                                    | Clock buffer(FF name)                                             | Load  |
 --------------------------------------------------------------------------------+-------------------------------------------------------------------+-------+
-icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1                                      | BUFG                                                              | 568   |
+icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1                                      | BUFG                                                              | 672   |
 icon_inst/U0/iUPDATE_OUT                                                        | NONE(icon_inst/U0/U_ICON/U_iDATA_CMD)                             | 1     |
-out<0>(alu_main_function/out<0>209:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[0].ASYNC_IN_CELL/U_RISING) | 2     |
-out<1>(alu_main_function/out<1>146:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[1].ASYNC_IN_CELL/U_RISING) | 2     |
-out<2>(alu_main_function/out<2>149:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[2].ASYNC_IN_CELL/U_RISING) | 2     |
-out<3>(alu_main_function/out<3>149:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[3].ASYNC_IN_CELL/U_RISING) | 2     |
+out<0>(alu_main_function/out<0>213:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[0].ASYNC_IN_CELL/U_RISING) | 2     |
+out<1>(alu_main_function/out<1>140:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[1].ASYNC_IN_CELL/U_RISING) | 2     |
+out<2>(alu_main_function/out<2>140:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[2].ASYNC_IN_CELL/U_RISING) | 2     |
+out<3>(alu_main_function/out<3>140:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[3].ASYNC_IN_CELL/U_RISING) | 2     |
 out<4>(alu_main_function/out<4>113:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[4].ASYNC_IN_CELL/U_RISING) | 2     |
-out<5>(alu_main_function/out<5>115:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[5].ASYNC_IN_CELL/U_RISING) | 2     |
-out<6>(alu_main_function/out<6>115:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[6].ASYNC_IN_CELL/U_RISING) | 2     |
-out<7>(alu_main_function/out<7>115:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[7].ASYNC_IN_CELL/U_RISING) | 2     |
+out<5>(alu_main_function/out<5>113:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[5].ASYNC_IN_CELL/U_RISING) | 2     |
+out<6>(alu_main_function/out<6>113:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[6].ASYNC_IN_CELL/U_RISING) | 2     |
+out<7>(alu_main_function/out<7>113:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[7].ASYNC_IN_CELL/U_RISING) | 2     |
 out<8>(alu_main_function/out<8>121:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[8].ASYNC_IN_CELL/U_RISING) | 2     |
-out<9>(alu_main_function/out<9>128:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[9].ASYNC_IN_CELL/U_RISING) | 2     |
-out<10>(alu_main_function/out<10>127:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[10].ASYNC_IN_CELL/U_RISING)| 2     |
-out<11>(alu_main_function/out<11>128:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[11].ASYNC_IN_CELL/U_RISING)| 2     |
-out<12>(alu_main_function/out<12>136:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[12].ASYNC_IN_CELL/U_RISING)| 2     |
-out<13>(alu_main_function/out<13>136:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[13].ASYNC_IN_CELL/U_RISING)| 2     |
-out<14>(alu_main_function/out<14>136:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[14].ASYNC_IN_CELL/U_RISING)| 2     |
-out<15>(alu_main_function/out<15>136:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[15].ASYNC_IN_CELL/U_RISING)| 2     |
-out<16>(alu_main_function/out<16>136:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[16].ASYNC_IN_CELL/U_RISING)| 2     |
-out<17>(alu_main_function/out<17>148:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[17].ASYNC_IN_CELL/U_RISING)| 2     |
+out<9>(alu_main_function/out<9>131:O)                                           | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[9].ASYNC_IN_CELL/U_RISING) | 2     |
+out<10>(alu_main_function/out<10>130:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[10].ASYNC_IN_CELL/U_RISING)| 2     |
+out<11>(alu_main_function/out<11>129:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[11].ASYNC_IN_CELL/U_RISING)| 2     |
+out<12>(alu_main_function/out<12>138:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[12].ASYNC_IN_CELL/U_RISING)| 2     |
+out<13>(alu_main_function/out<13>139:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[13].ASYNC_IN_CELL/U_RISING)| 2     |
+out<14>(alu_main_function/out<14>139:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[14].ASYNC_IN_CELL/U_RISING)| 2     |
+out<15>(alu_main_function/out<15>138:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[15].ASYNC_IN_CELL/U_RISING)| 2     |
+out<16>(alu_main_function/out<16>138:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[16].ASYNC_IN_CELL/U_RISING)| 2     |
+out<17>(alu_main_function/out<17>150:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[17].ASYNC_IN_CELL/U_RISING)| 2     |
 out<18>(alu_main_function/out<18>149:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[18].ASYNC_IN_CELL/U_RISING)| 2     |
-out<19>(alu_main_function/out<19>160:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[19].ASYNC_IN_CELL/U_RISING)| 2     |
-out<20>(alu_main_function/out<20>142:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[20].ASYNC_IN_CELL/U_RISING)| 2     |
-out<21>(alu_main_function/out<21>150:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[21].ASYNC_IN_CELL/U_RISING)| 2     |
-out<22>(alu_main_function/out<22>150:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[22].ASYNC_IN_CELL/U_RISING)| 2     |
-out<23>(alu_main_function/out<23>157:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[23].ASYNC_IN_CELL/U_RISING)| 2     |
-out<24>(alu_main_function/out<24>127:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[24].ASYNC_IN_CELL/U_RISING)| 2     |
-out<25>(alu_main_function/out<25>159:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[25].ASYNC_IN_CELL/U_RISING)| 2     |
-out<26>(alu_main_function/out<26>132:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[26].ASYNC_IN_CELL/U_RISING)| 2     |
-out<27>(alu_main_function/out<27>131:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[27].ASYNC_IN_CELL/U_RISING)| 2     |
-out<28>(alu_main_function/out<28>155:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[28].ASYNC_IN_CELL/U_RISING)| 2     |
-out<29>(alu_main_function/out<29>155:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[29].ASYNC_IN_CELL/U_RISING)| 2     |
-out<30>(alu_main_function/out<30>157:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[30].ASYNC_IN_CELL/U_RISING)| 2     |
-out<31>(alu_main_function/out<31>146:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[31].ASYNC_IN_CELL/U_RISING)| 2     |
+out<19>(alu_main_function/out<19>161:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[19].ASYNC_IN_CELL/U_RISING)| 2     |
+out<20>(alu_main_function/out<20>145:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[20].ASYNC_IN_CELL/U_RISING)| 2     |
+out<21>(alu_main_function/out<21>152:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[21].ASYNC_IN_CELL/U_RISING)| 2     |
+out<22>(alu_main_function/out<22>152:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[22].ASYNC_IN_CELL/U_RISING)| 2     |
+out<23>(alu_main_function/out<23>161:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[23].ASYNC_IN_CELL/U_RISING)| 2     |
+out<24>(alu_main_function/out<24>134:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[24].ASYNC_IN_CELL/U_RISING)| 2     |
+out<25>(alu_main_function/out<25>162:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[25].ASYNC_IN_CELL/U_RISING)| 2     |
+out<26>(alu_main_function/out<26>135:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[26].ASYNC_IN_CELL/U_RISING)| 2     |
+out<27>(alu_main_function/out<27>135:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[27].ASYNC_IN_CELL/U_RISING)| 2     |
+out<28>(alu_main_function/out<28>161:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[28].ASYNC_IN_CELL/U_RISING)| 2     |
+out<29>(alu_main_function/out<29>160:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[29].ASYNC_IN_CELL/U_RISING)| 2     |
+out<30>(alu_main_function/out<30>160:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[30].ASYNC_IN_CELL/U_RISING)| 2     |
+out<31>(alu_main_function/out<31>147:O)                                         | NONE(*)(vio_inst/U0/I_VIO/GEN_ASYNC_IN[31].ASYNC_IN_CELL/U_RISING)| 2     |
 clk                                                                             | BUFGP                                                             | 264   |
 icon_inst/CONTROL1<13>(icon_inst/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[9].U_LCE:O)| NONE(*)(ila_inst/U0/I_NO_D.U_ILA/U_STAT/U_DIRTY_LDC)              | 1     |
 --------------------------------------------------------------------------------+-------------------------------------------------------------------+-------+
@@ -416,7 +433,7 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 11.202ns (Maximum Frequency: 89.268MHz)
+   Minimum period: 15.138ns (Maximum Frequency: 66.059MHz)
    Minimum input arrival time before clock: 0.625ns
    Maximum output required time after clock: 0.514ns
    Maximum combinational path delay: No path found
@@ -424,7 +441,7 @@ Speed Grade: -5
 =========================================================================
 Timing constraint: TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 nS HIGH 15 nS
   Clock period: 8.287ns (frequency: 120.671MHz)
-  Total number of paths / destination ports: 17747 / 1088
+  Total number of paths / destination ports: 208407 / 1322
   Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
 -------------------------------------------------------------------------
 Slack:                  22.822ns
@@ -501,36 +518,40 @@ Slack:                  12.798ns
 
 =========================================================================
 Timing constraint: TS_J_TO_D = FROM TIMEGRP "J_CLK" TO TIMEGRP "D_CLK" TIG;
-  Clock period: 10.004ns (frequency: 99.964MHz)
-  Total number of paths / destination ports: 9699 / 118
+  Clock period: 13.875ns (frequency: 72.072MHz)
+  Total number of paths / destination ports: 201727 / 118
   Number of failed paths / ports: 0 (0.00%) / 0 (0.00%)
 -------------------------------------------------------------------------
-Delay:                  10.004ns
-  Source:               vio_inst/U0/I_VIO/GEN_ASYNC_OUT[0].ASYNC_OUT_CELL/USER_REG (FF)
-  Destination:          vio_inst/U0/I_VIO/GEN_ASYNC_IN[0].ASYNC_IN_CELL/S_USER_REG (FF)
-  Data Path Delay:      10.004ns (Levels of Logic = 9)
+Delay:                  13.875ns
+  Source:               vio_inst/U0/I_VIO/GEN_ASYNC_OUT[3].ASYNC_OUT_CELL/USER_REG (FF)
+  Destination:          ila_inst/U0/I_TQ0.G_TW[24].U_TQ (FF)
+  Data Path Delay:      13.875ns (Levels of Logic = 13)
   Source Clock:         icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising at 0.000ns
-  Destination Clock:    icon_inst/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising at 0.000ns
+  Destination Clock:    clk rising at 0.000ns
 
-  Data Path: vio_inst/U0/I_VIO/GEN_ASYNC_OUT[0].ASYNC_OUT_CELL/USER_REG (FF) to vio_inst/U0/I_VIO/GEN_ASYNC_IN[0].ASYNC_IN_CELL/S_USER_REG (FF)
+  Data Path: vio_inst/U0/I_VIO/GEN_ASYNC_OUT[3].ASYNC_OUT_CELL/USER_REG (FF) to ila_inst/U0/I_TQ0.G_TW[24].U_TQ (FF)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             13   0.514   0.988  U0/I_VIO/GEN_ASYNC_OUT[0].ASYNC_OUT_CELL/USER_REG (ASYNC_OUT<0>)
+     FDE:C->Q             11   0.514   0.945  U0/I_VIO/GEN_ASYNC_OUT[3].ASYNC_OUT_CELL/USER_REG (ASYNC_OUT<3>)
      end scope: 'vio_inst'
-     LUT3:I0->O            1   0.612   0.360  alu_main_function/out_mux0000_SW0 (N163)
-     LUT4:I3->O           33   0.612   1.103  alu_main_function/out_mux0000 (alu_main_function/out_mux0000)
-     LUT3:I2->O            1   0.612   0.000  alu_main_function/Maddsub_out_addsub0000_lut<0> (alu_main_function/Maddsub_out_addsub0000_lut<0>)
-     XORCY:LI->O           1   0.458   0.509  alu_main_function/Maddsub_out_addsub0000_xor<0> (alu_main_function/out_addsub0000<0>)
-     LUT4:I0->O            1   0.612   0.509  alu_main_function/out<0>21 (alu_main_function/out<0>21)
-     LUT3:I0->O            1   0.612   0.360  alu_main_function/out<0>137 (alu_main_function/out<0>137)
-     LUT4:I3->O            4   0.612   0.651  alu_main_function/out<0>209 (out<0>)
-     begin scope: 'vio_inst'
-     LUT3:I0->O            1   0.612   0.000  U0/I_VIO/GEN_ASYNC_IN[0].ASYNC_IN_CELL/USER_MUX (U0/I_VIO/GEN_ASYNC_IN[0].ASYNC_IN_CELL/mux1_out)
-     FDE:D                     0.268          U0/I_VIO/GEN_ASYNC_IN[0].ASYNC_IN_CELL/S_USER_REG
+     LUT3:I0->O            1   0.612   0.360  decoder/op<3>3_SW0 (N196)
+     LUT4:I3->O            3   0.612   0.454  decoder/op<3>3 (N101)
+     LUT4:I3->O            3   0.612   0.603  decoder/op<0>2 (N5)
+     LUT3:I0->O            1   0.612   0.000  decoder/op<5>711 (decoder/op<5>71)
+     MUXF5:I1->O          10   0.278   0.819  decoder/op<5>71_f5 (op<5>)
+     LUT3:I1->O            7   0.612   0.605  alu_main_function/out_or000711 (alu_main_function/N11)
+     LUT4:I3->O           35   0.612   1.226  alu_main_function/out_or00081 (alu_main_function/out_or0008)
+     LUT4:I0->O            1   0.612   0.000  alu_main_function/out<24>641 (alu_main_function/out<24>641)
+     MUXF5:I1->O           1   0.278   0.387  alu_main_function/out<24>64_f5 (alu_main_function/out<24>64)
+     LUT3:I2->O            1   0.612   0.509  alu_main_function/out<24>70 (alu_main_function/out<24>70)
+     LUT4:I0->O            1   0.612   0.509  alu_main_function/out<24>123 (alu_main_function/out<24>123)
+     LUT3:I0->O            4   0.612   0.000  alu_main_function/out<24>134 (out<24>)
+     begin scope: 'ila_inst'
+     FDP:D                     0.268          U0/I_TQ0.G_TW[24].U_TQ
     ----------------------------------------
-    Total                     10.004ns (5.524ns logic, 4.480ns route)
-                                       (55.2% logic, 44.8% route)
+    Total                     13.875ns (7.458ns logic, 6.417ns route)
+                                       (53.8% logic, 46.2% route)
 
 =========================================================================
 Timing constraint: TS_D_TO_J = FROM TIMEGRP "D_CLK" TO TIMEGRP "J_CLK" TIG;
@@ -615,15 +636,15 @@ WARNING:Xst:616 - Invalid property "SYN_BLACK_BOX 1": Did not attach to ila_inst
 WARNING:Xst:616 - Invalid property "SYN_NOPRUNE 1": Did not attach to ila_inst.
 
 
-Total REAL time to Xst completion: 15.00 secs
-Total CPU time to Xst completion: 14.70 secs
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 21.40 secs
  
 --> 
 
 
-Total memory usage is 545420 kilobytes
+Total memory usage is 561792 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   12 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

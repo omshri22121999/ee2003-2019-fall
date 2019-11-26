@@ -8,7 +8,7 @@
 // \   \   \/     Version    : 14.7
 //  \   \         Application: Xilinx CORE Generator
 //  /   /         Filename   : vio1.v
-// /___/   /\     Timestamp  : Thu Aug 15 17:26:11 IST 2019
+// /___/   /\     Timestamp  : Tue Oct 29 09:29:27 IST 2019
 // \   \  /  \
 //  \___\/\___\
 //
@@ -26,6 +26,6 @@ module vio1(
 
 inout [35 : 0] CONTROL;
 input [31 : 0] ASYNC_IN;
-output [69 : 0] ASYNC_OUT;
+output [95 : 0] ASYNC_OUT;
 
 endmodule

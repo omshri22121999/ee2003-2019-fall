@@ -8,7 +8,7 @@
 // \   \   \/     Version    : 14.7
 //  \   \         Application: Xilinx CORE Generator
 //  /   /         Filename   : vio2.v
-// /___/   /\     Timestamp  : Sat Aug 31 18:46:05 IST 2019
+// /___/   /\     Timestamp  : Tue Oct 29 09:39:30 IST 2019
 // \   \  /  \
 //  \___\/\___\
 //
@@ -20,14 +20,12 @@
 
 module vio2(
     CONTROL,
-    CLK,
-    SYNC_IN,
-    SYNC_OUT) /* synthesis syn_black_box syn_noprune=1 */;
+    ASYNC_IN,
+    ASYNC_OUT) /* synthesis syn_black_box syn_noprune=1 */;
 
 
 inout [35 : 0] CONTROL;
-input CLK;
-input [127 : 0] SYNC_IN;
-output [144 : 0] SYNC_OUT;
+input [127 : 0] ASYNC_IN;
+output [148 : 0] ASYNC_OUT;
 
 endmodule

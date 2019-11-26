@@ -5,7 +5,16 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="sim" num="716" delta="new" >Unable to open project &apos;<arg fmt="%s" index="1">/home/omshripc/Sem 5/EE2003/ISE/expt1/exp1/ipcore_dir/icon1.cgc</arg>&apos;. Project file does not exist.
+<msg type="info" file="sim" num="172" delta="old" >Generating IP...
+</msg>
+
+<msg type="warning" file="sim" num="89" delta="old" >A core named &lt;<arg fmt="%s" index="1">vio1</arg>&gt; already exists in the output directory. Output products for this core may be overwritten.
+</msg>
+
+<msg type="info" file="sim" num="949" delta="old" >Finished generation of ASY schematic symbol.
+</msg>
+
+<msg type="info" file="sim" num="948" delta="old" >Finished FLIST file generation.
 </msg>
 
 </messages>

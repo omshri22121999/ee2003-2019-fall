@@ -8,7 +8,7 @@
 // \   \   \/     Version    : 14.7
 //  \   \         Application: Xilinx CORE Generator
 //  /   /         Filename   : vio2.veo
-// /___/   /\     Timestamp  : Sat Aug 31 18:46:05 IST 2019
+// /___/   /\     Timestamp  : Tue Oct 29 09:39:30 IST 2019
 // \   \  /  \
 //  \___\/\___\
 //
@@ -22,9 +22,8 @@
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 vio2 YourInstanceName (
     .CONTROL(CONTROL), // INOUT BUS [35:0]
-    .CLK(CLK), // IN
-    .SYNC_IN(SYNC_IN), // IN BUS [127:0]
-    .SYNC_OUT(SYNC_OUT) // OUT BUS [144:0]
+    .ASYNC_IN(ASYNC_IN), // IN BUS [127:0]
+    .ASYNC_OUT(ASYNC_OUT) // OUT BUS [148:0]
 );
 
 // INST_TAG_END ------ End INSTANTIATION Template ---------

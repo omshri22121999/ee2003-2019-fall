@@ -1,0 +1,1215 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Map Application Log File for Design 'top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off
+-c 100 -o top_map.ncd top.ngd top.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Tue Nov 26 15:42:49 2019
+
+Mapping design into LUTs...
+Running directed packing...
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_17/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_25/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/MEM_STAGE/dmem_decoder_instance/w_data_r<10>3_f5.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/MEM_STAGE/dmem_decoder_instance/w_data_r<10>4_f5.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_12/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_20/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_9/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_5/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_17/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_25/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_9/MUXF5.I1.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_0/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_8/MUXF6.I1/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_18/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_26/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_3/MUXF6.I1/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_29/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_18/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_26/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7/MUXF6.I0/MUXF5.I0.
+    There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_16/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_24/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_19/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_27/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_0.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_1.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_2.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_3.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_4.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_5.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_6.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_7.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_13/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_21/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_8.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_9.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_11/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_5/MUXF6.I0/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_28/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/ID_STAGE/reg_forwarding_type_w<1>_f5.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_0/MUXF6.I0/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/ID_STAGE/reg_forwarding_type_w<3>_f5.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_10/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_18/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_26/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_13/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_21/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_10/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_6/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_29/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_11/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_1/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_11/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_9/MUXF6.I1/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_12/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_20/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_4/MUXF6.I1/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_10.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_11.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_12.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_20.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_13.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_21.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_14.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_22.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_30.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_15.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_23.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_16.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_24.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_17.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_25.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_18.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_26.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_19.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_27.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_28.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5_29.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6/MUXF5.I1.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_19/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_27/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_12/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_20/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_17/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_25/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_14/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_22/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_30/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_12/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_20/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_13/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_21/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_6/MUXF6.I0/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_13/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_21/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/MEM_STAGE/multiplier/Sh17611_f5.  There is more than one
+   F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_1/MUXF6.I0/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_19/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_27/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_14/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_22/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_30/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_2/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_14/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_22/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_30/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_5_f5.  There is more
+   than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_7/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_14/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_22/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_30/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_2/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_15/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_23/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_3/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_15/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_23/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_5/MUXF6.I1/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_16/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_24/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_4/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_28/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_0/MUXF6.I1/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_18/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_26/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_16/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_24/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_15/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_23/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_13/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_21/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_17/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_25/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_10/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_5/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_0/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_7/MUXF6.I0/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_0/MUXF5.I1.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_17/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_25/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_2/MUXF6.I0/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_28/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_18/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_26/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_6/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_15/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_23/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_1/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_8/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_1/MUXF5.I1.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_10/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_18/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_26/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_3/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_19/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_27/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_7/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_2/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_10/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_2/MUXF5.I1.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_19/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_27/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_6/MUXF6.I1/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_28/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_8/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_29/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_1/MUXF6.I1/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_3/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_19/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_27/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_11/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_3/MUXF5.I1.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_16/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_24/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_28/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_14/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_22/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_30/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7/MUXF6.I1/MUXF5.I0.
+    There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_11/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_29/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_8/MUXF6.I0/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_9/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_4/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_12/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_20/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_3/MUXF6.I0/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_4/MUXF5.I1.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_29/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_29/MUXF5.I1. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_16/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_24/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_5/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_9/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_11/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_13/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_21/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_5/MUXF5.I1.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_4_f7_4/MUXF6.I1/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_6/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_14/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_22/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_30/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_6/MUXF5.I1.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_7/MUXF6.I1/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_2/MUXF6.I1/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_28/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_7/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_17/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_25/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_15/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_23/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_7/MUXF5.I1.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_15/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_23/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_12/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f7_20/MUXF6.I1/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_10/MUXF6.I0/MUXF5.I0.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_9/MUXF6.I0/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux_rv2_6_f6_8/MUXF5.I1.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_3_f7_4/MUXF6.I0/MUXF5.I0.  There is
+   more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_16/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_4_f6_24/MUXF5.I0. 
+   There is more than one F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator XST_GND failed to merge with F5
+   multiplexer CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f6_8/MUXF5.I1.  There
+   is more than one F5MUX.  The design will exhibit suboptimal timing.
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f5 is sourced by a combinatorial
+   pin. This is not good design practice. Use the CE pin to control the loading
+   of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ila_ctrl<13> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[60].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[52].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[44].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[36].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[28].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[3].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[91].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[83].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[75].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[67].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[59].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[5].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[11].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[70].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[62].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[54].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[46].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[38].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[41].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[33].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[25].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[17].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[20].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[12].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[21].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[13].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[94].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[86].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[78].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[80].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[72].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[64].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[56].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[48].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[7].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[92].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[84].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[76].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[68].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[6].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[31].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[23].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[15].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[71].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[63].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[55].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[47].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[39].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[1].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[88].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[90].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[82].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[74].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[66].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[58].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[50].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[42].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[34].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[26].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[18].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[9].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[93].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[85].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[77].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[69].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[51].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[43].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[35].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[27].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[19].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[2].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[95].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[87].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[79].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[10].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[30].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[22].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[14].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[61].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[53].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[45].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[37].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[29].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[4].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[8].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[81].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[73].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[65].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[57].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[49].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[40].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[32].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[24].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[16].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_SYNC_IN[89].SYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:  327
+Logic Utilization:
+  Total Number Slice Registers:       3,995 out of   9,312   42%
+    Number used as Flip Flops:        3,994
+    Number used as Latches:               1
+  Number of 4 input LUTs:             4,098 out of   9,312   44%
+Logic Distribution:
+  Number of occupied Slices:          4,173 out of   4,656   89%
+    Number of Slices containing only related logic:   4,173 out of   4,173 100%
+    Number of Slices containing unrelated logic:          0 out of   4,173   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       4,566 out of   9,312   49%
+    Number used as logic:             3,900
+    Number used as a route-thru:        468
+    Number used as Shift registers:     198
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                  1 out of     232    1%
+  Number of RAMB16s:                      4 out of      20   20%
+  Number of BUFGMUXs:                     2 out of      24    8%
+  Number of BSCANs:                       1 out of       1  100%
+
+  Number of RPM macros:           15
+Average Fanout of Non-Clock Nets:                3.35
+
+Peak Memory Usage:  698 MB
+Total REAL time to MAP completion:  6 secs 
+Total CPU time to MAP completion:   6 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "top_map.mrp" for details.

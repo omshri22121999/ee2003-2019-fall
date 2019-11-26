@@ -1,0 +1,14 @@
+# Output products list for <vio3_clk>
+_xmsgs/pn_parser.xmsgs
+vio3_clk.asy
+vio3_clk.cdc
+vio3_clk.gise
+vio3_clk.ngc
+vio3_clk.sym
+vio3_clk.v
+vio3_clk.veo
+vio3_clk.xco
+vio3_clk.xise
+vio3_clk_flist.txt
+vio3_clk_readme.txt
+vio3_clk_xmdf.tcl

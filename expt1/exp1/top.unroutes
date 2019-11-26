@@ -1,9 +1,32 @@
 Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Aug 16 12:02:08 2019
+Tue Oct 29 09:30:29 2019
 
 All signals are completely routed.
 
+WARNING:ParHelpers:361 - There are 20 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   vio_inst/U0/I_VIO/UPDATE<10>
+   vio_inst/U0/I_VIO/UPDATE<11>
+   vio_inst/U0/I_VIO/UPDATE<15>
+   vio_inst/U0/I_VIO/UPDATE<16>
+   vio_inst/U0/I_VIO/UPDATE<17>
+   vio_inst/U0/I_VIO/UPDATE<18>
+   vio_inst/U0/I_VIO/UPDATE<19>
+   vio_inst/U0/I_VIO/UPDATE<21>
+   vio_inst/U0/I_VIO/UPDATE<22>
+   vio_inst/U0/I_VIO/UPDATE<23>
+   vio_inst/U0/I_VIO/UPDATE<24>
+   vio_inst/U0/I_VIO/UPDATE<25>
+   vio_inst/U0/I_VIO/UPDATE<26>
+   vio_inst/U0/I_VIO/UPDATE<27>
+   vio_inst/U0/I_VIO/UPDATE<28>
+   vio_inst/U0/I_VIO/UPDATE<29>
+   vio_inst/U0/I_VIO/UPDATE<31>
+   vio_inst/U0/I_VIO/UPDATE<7>
+   vio_inst/U0/I_VIO/UPDATE<8>
+   vio_inst/U0/I_VIO/UPDATE<9>
 
 

@@ -1,0 +1,13 @@
+# Output products list for <ico_4>
+_xmsgs/pn_parser.xmsgs
+ico_4.asy
+ico_4.gise
+ico_4.ngc
+ico_4.sym
+ico_4.v
+ico_4.veo
+ico_4.xco
+ico_4.xise
+ico_4_flist.txt
+ico_4_readme.txt
+ico_4_xmdf.tcl

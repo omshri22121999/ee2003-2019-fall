@@ -18,10 +18,21 @@ module imem(
 	 clk
 	);
 	
-	input [`REG_SIZE-1:0] iaddr;
-	output [`REG_SIZE-1:0] idata;
-	input clk;
+	 //------------------------//
+	 //			Input				//
+	 //------------------------//
+	input [`REG_SIZE-1:0] iaddr; 	//Address
+	input clk;							//Clock
+	
+	 //------------------------//
+	 //			Output			//
+	 //------------------------//
+	output [`REG_SIZE-1:0] idata;	//Data In
 		
+	
+	 //------------------------//
+	 //			IMEM Part		//
+	 //------------------------//
 	imem_core imem_inst (
 	  .clka(clk), // input clka
 	  .wea(1'b0), // input [0 : 0] wea

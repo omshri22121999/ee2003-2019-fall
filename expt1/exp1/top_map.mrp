@@ -9,25 +9,25 @@ Target Device  : xc3s500e
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Fri Aug 16 12:01:54 2019
+Mapped Date    : Tue Oct 29 09:30:14 2019
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   65
+Number of warnings:   85
 Logic Utilization:
-  Total Number Slice Registers:         795 out of   9,312    8%
-    Number used as Flip Flops:          794
+  Total Number Slice Registers:         879 out of   9,312    9%
+    Number used as Flip Flops:          878
     Number used as Latches:               1
-  Number of 4 input LUTs:               946 out of   9,312   10%
+  Number of 4 input LUTs:             1,033 out of   9,312   11%
 Logic Distribution:
-  Number of occupied Slices:            890 out of   4,656   19%
-    Number of Slices containing only related logic:     890 out of     890 100%
-    Number of Slices containing unrelated logic:          0 out of     890   0%
+  Number of occupied Slices:            987 out of   4,656   21%
+    Number of Slices containing only related logic:     987 out of     987 100%
+    Number of Slices containing unrelated logic:          0 out of     987   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       1,002 out of   9,312   10%
-    Number used as logic:               847
-    Number used as a route-thru:         56
+  Total Number of 4 input LUTs:       1,090 out of   9,312   11%
+    Number used as logic:               934
+    Number used as a route-thru:         57
     Number used as Shift registers:      99
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -39,9 +39,9 @@ Logic Distribution:
   Number of BSCANs:                       1 out of       1  100%
 
   Number of RPM macros:           12
-Average Fanout of Non-Clock Nets:                3.05
+Average Fanout of Non-Clock Nets:                3.04
 
-Peak Memory Usage:  650 MB
+Peak Memory Usage:  660 MB
 Total REAL time to MAP completion:  2 secs 
 Total CPU time to MAP completion:   2 secs 
 
@@ -90,13 +90,6 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net ila_control<13> is sourced
 WARNING:PhysDesignRules:372 - Gated clock. Clock net out<31> is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net out<4> is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vio_inst/U0/I_VIO/GEN_ASYNC_IN[4].ASYNC_IN_CELL/user_in_n is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net out<30> is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
@@ -106,23 +99,27 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net out<29> is sourced by a
 WARNING:PhysDesignRules:372 - Gated clock. Clock net out<28> is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net out<24> is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vio_inst/U0/I_VIO/GEN_ASYNC_IN[24].ASYNC_IN_CELL/user_in_n is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net out<27> is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net out<24> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net out<16> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_ASYNC_IN[16].ASYNC_IN_CELL/user_in_n is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net out<26> is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net out<11> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_ASYNC_IN[11].ASYNC_IN_CELL/user_in_n is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net out<25> is sourced by a
@@ -142,25 +139,11 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    vio_inst/U0/I_VIO/GEN_ASYNC_IN[0].ASYNC_IN_CELL/user_in_n is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net out<1> is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net out<17> is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vio_inst/U0/I_VIO/GEN_ASYNC_IN[1].ASYNC_IN_CELL/user_in_n is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net out<2> is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vio_inst/U0/I_VIO/GEN_ASYNC_IN[2].ASYNC_IN_CELL/user_in_n is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net out<3> is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vio_inst/U0/I_VIO/GEN_ASYNC_IN[3].ASYNC_IN_CELL/user_in_n is sourced by a
+   vio_inst/U0/I_VIO/GEN_ASYNC_IN[17].ASYNC_IN_CELL/user_in_n is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net out<20> is sourced by a
@@ -177,31 +160,6 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    vio_inst/U0/I_VIO/GEN_ASYNC_IN[12].ASYNC_IN_CELL/user_in_n is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net out<10> is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vio_inst/U0/I_VIO/GEN_ASYNC_IN[10].ASYNC_IN_CELL/user_in_n is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vio_inst/U0/I_VIO/GEN_ASYNC_IN[11].ASYNC_IN_CELL/user_in_n is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net out<13> is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vio_inst/U0/I_VIO/GEN_ASYNC_IN[13].ASYNC_IN_CELL/user_in_n is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net out<14> is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vio_inst/U0/I_VIO/GEN_ASYNC_IN[14].ASYNC_IN_CELL/user_in_n is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    vio_inst/U0/I_VIO/GEN_ASYNC_IN[30].ASYNC_IN_CELL/user_in_n is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
@@ -209,23 +167,15 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
 WARNING:PhysDesignRules:372 - Gated clock. Clock net out<23> is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net out<15> is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_ASYNC_IN[24].ASYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net out<22> is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vio_inst/U0/I_VIO/GEN_ASYNC_IN[15].ASYNC_IN_CELL/user_in_n is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vio_inst/U0/I_VIO/GEN_ASYNC_IN[31].ASYNC_IN_CELL/user_in_n is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vio_inst/U0/I_VIO/GEN_ASYNC_IN[16].ASYNC_IN_CELL/user_in_n is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vio_inst/U0/I_VIO/GEN_ASYNC_IN[25].ASYNC_IN_CELL/user_in_n is sourced by a
+   vio_inst/U0/I_VIO/GEN_ASYNC_IN[28].ASYNC_IN_CELL/user_in_n is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net out<6> is sourced by a
@@ -239,10 +189,14 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    vio_inst/U0/I_VIO/GEN_ASYNC_IN[29].ASYNC_IN_CELL/user_in_n is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net out<22> is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net out<21> is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net out<21> is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net out<1> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_ASYNC_IN[1].ASYNC_IN_CELL/user_in_n is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net out<19> is sourced by a
@@ -251,7 +205,20 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net out<19> is sourced by a
 WARNING:PhysDesignRules:372 - Gated clock. Clock net out<18> is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net out<17> is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net out<15> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net out<13> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_ASYNC_IN[13].ASYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net out<14> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net out<4> is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net out<7> is sourced by a
@@ -261,7 +228,14 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    vio_inst/U0/I_VIO/GEN_ASYNC_IN[7].ASYNC_IN_CELL/user_in_n is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net out<9> is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net out<10> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net out<2> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_ASYNC_IN[2].ASYNC_IN_CELL/user_in_n is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net out<8> is sourced by a
@@ -269,6 +243,16 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net out<8> is sourced by a
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    vio_inst/U0/I_VIO/GEN_ASYNC_IN[8].ASYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net out<3> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_ASYNC_IN[3].ASYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net out<9> is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -284,11 +268,19 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vio_inst/U0/I_VIO/GEN_ASYNC_IN[17].ASYNC_IN_CELL/user_in_n is sourced by a
+   vio_inst/U0/I_VIO/GEN_ASYNC_IN[4].ASYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_ASYNC_IN[25].ASYNC_IN_CELL/user_in_n is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    vio_inst/U0/I_VIO/GEN_ASYNC_IN[22].ASYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_ASYNC_IN[14].ASYNC_IN_CELL/user_in_n is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -300,7 +292,11 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   vio_inst/U0/I_VIO/GEN_ASYNC_IN[28].ASYNC_IN_CELL/user_in_n is sourced by a
+   vio_inst/U0/I_VIO/GEN_ASYNC_IN[10].ASYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_ASYNC_IN[31].ASYNC_IN_CELL/user_in_n is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -308,19 +304,72 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   vio_inst/U0/I_VIO/GEN_ASYNC_IN[15].ASYNC_IN_CELL/user_in_n is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
    vio_inst/U0/I_VIO/GEN_ASYNC_IN[21].ASYNC_IN_CELL/user_in_n is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<31>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<29>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<28>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<27>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<26>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<25>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<24>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<23>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<22>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<21>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<19>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<18>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<17>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<16>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<15>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<11>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<10>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<9>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<8>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <vio_inst/U0/I_VIO/UPDATE<7>> is
+   incomplete. The signal does not drive any load pins in the design.
 
 Section 3 - Informational
 -------------------------
+INFO:LIT:243 - Logical network vio_inst/ASYNC_OUT<31> has no load.
+INFO:LIT:395 - The above info message is repeated 19 more times for the
+   following (max. 5 shown):
+   vio_inst/ASYNC_OUT<29>,
+   vio_inst/ASYNC_OUT<28>,
+   vio_inst/ASYNC_OUT<27>,
+   vio_inst/ASYNC_OUT<26>,
+   vio_inst/ASYNC_OUT<25>
+   To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  55 block(s) removed
-  45 block(s) optimized away
-  40 signal(s) removed
+  75 block(s) removed
+  46 block(s) optimized away
+  60 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -421,6 +470,26 @@ The signal "vio_control<8>" is sourceless and has been removed.
   The signal "vio_inst/U0/I_VIO/U_STATUS/iSTAT_CNT<7>165" is sourceless and has
 been removed.
 The signal "vio_control<9>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<31>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<29>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<28>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<27>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<26>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<25>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<24>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<23>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<22>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<21>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<19>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<18>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<17>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<16>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<15>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<11>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<10>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<9>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<8>" is sourceless and has been removed.
+The signal "vio_inst/ASYNC_OUT<7>" is sourceless and has been removed.
 Unused block "icon_inst/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_HCE" (ROM)
 removed.
 Unused block "icon_inst/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[10].U_HCE" (ROM)
@@ -483,6 +552,46 @@ Unused block "icon_inst/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[8].U_HCE" (ROM)
 removed.
 Unused block "icon_inst/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[9].U_HCE" (ROM)
 removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[10].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[11].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[15].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[16].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[17].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[18].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[19].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[21].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[22].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[23].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[24].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[25].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[26].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[27].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[28].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[29].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[31].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[7].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[8].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
+Unused block "vio_inst/U0/I_VIO/GEN_ASYNC_OUT[9].ASYNC_OUT_CELL/USER_REG" (FF)
+removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
@@ -498,6 +607,8 @@ _lut<6>
    optimized to 0
 GND 		ila_inst/XST_GND
 VCC 		ila_inst/XST_VCC
+LUT4 		vio_inst/U0/I_VIO/U_STATUS/F_STAT[5].I_STAT.U_STAT
+   optimized to 0
 LUT4 		vio_inst/U0/I_VIO/U_STATUS/F_STAT[7].I_STAT.U_STAT
    optimized to 0
 LUT4 		vio_inst/U0/I_VIO/U_STATUS/iSTAT_CNT<7>12

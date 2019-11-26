@@ -1,0 +1,15 @@
+MO dmem NULL ../dmem.v vlg5F/dmem.bin 1574754661
+MO CPU NULL ../CPU.v vlg70/_c_p_u.bin 1574754661
+MO pipeline_id NULL ../pipeline_id.v vlg2E/pipeline__id.bin 1574754661
+MO pipeline_ex NULL ../pipeline_ex.v vlg2E/pipeline__ex.bin 1574754661
+MO pipeline_if NULL ../pipeline_if.v vlg30/pipeline__if.bin 1574754661
+MO icon NULL ipcore_dir/icon.v vlg09/icon.bin 1574754661
+MO pipeline_mem NULL ../pipeline_mem.v vlg3C/pipeline__mem.bin 1574754661
+MO rf NULL ../rf.v vlg20/rf.bin 1574754661
+MO top NULL top.v vlg6F/top.bin 1574754661
+MO alu_32_bit NULL ../alu_32_bit.v vlg30/alu__32__bit.bin 1574754661
+MO peripheral NULL ../peripheral.v vlg0C/peripheral.bin 1574754661
+MO vio NULL ipcore_dir/vio.v vlg02/vio.bin 1574754661
+MO pipeline_wb NULL ../pipeline_wb.v vlg72/pipeline__wb.bin 1574754661
+MO dmem_decoder NULL ../dmem_decoder.v vlg34/dmem__decoder.bin 1574754661
+MO ila NULL ipcore_dir/ila.v vlg3E/ila.bin 1574754661

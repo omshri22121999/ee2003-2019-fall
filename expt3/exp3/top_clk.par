@@ -1,0 +1,951 @@
+Release 14.7 par P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+omshripc::  Tue Nov 05 10:05:27 2019
+
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+
+
+Constraints file: top_clk.pcf.
+Loading device for application Rf_Device from file '3s500e.nph' in environment /opt/tools/xilinx/ise/14.7/ISE_DS/ISE/.
+   "top_clk" is an NCD, version 3.2, device xc3s500e, package fg320, speed -5
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.27 2013-10-13".
+
+
+Design Summary Report:
+
+ Number of External IOBs                           1 out of 232     1%
+
+   Number of External Input IOBs                  1
+
+      Number of External Input IBUFs              1
+        Number of LOCed External Input IBUFs      1 out of 1     100%
+
+
+   Number of External Output IOBs                 0
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BSCANs                          1 out of 1     100%
+   Number of BUFGMUXs                        4 out of 24     16%
+   Number of Slices                       4654 out of 4656   99%
+      Number of SLICEMs                    193 out of 2328    8%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 3 secs 
+Finished initial Timing Analysis.  REAL time: 3 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 3 secs 
+Total CPU  time at the beginning of Placer: 2 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:bbb21733) REAL time: 4 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:bbb21733) REAL time: 5 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:f42414aa) REAL time: 5 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:cb1b09) REAL time: 5 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:cb1b09) REAL time: 5 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:cb1b09) REAL time: 5 secs 
+
+Phase 7.8  Global Placement
+...................................................................
+.......................................................................................................................
+...................
+Phase 7.8  Global Placement (Checksum:44be4427) REAL time: 9 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:44be4427) REAL time: 9 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:d61497f7) REAL time: 12 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:d61497f7) REAL time: 12 secs 
+
+Total REAL time to Placer completion: 12 secs 
+Total CPU  time to Placer completion: 11 secs 
+Writing design to file top_clk.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 24220 unrouted;      REAL time: 15 secs 
+
+Phase  2  : 19574 unrouted;      REAL time: 19 secs 
+
+Phase  3  : 5592 unrouted;      REAL time: 21 secs 
+
+Phase  4  : 5592 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 22 secs 
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 25 secs 
+
+Updating file: top_clk.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 26 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 26 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 27 secs 
+WARNING:Route:455 - CLK Net:mem_we<2> may have excessive skew because 
+      0 CLK pins and 290 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:mem_we<3> may have excessive skew because 
+      0 CLK pins and 290 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<2> may have excessive skew because 
+      0 CLK pins and 30 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<3> may have excessive skew because 
+      1 CLK pins and 30 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<26> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<18> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<10> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<30> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<6> may have excessive skew because 
+      0 CLK pins and 70 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<5> may have excessive skew because 
+      0 CLK pins and 100 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<4> may have excessive skew because 
+      0 CLK pins and 195 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<1> may have excessive skew because 
+      0 CLK pins and 130 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<17> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<0> may have excessive skew because 
+      0 CLK pins and 130 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<16> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<3> may have excessive skew because 
+      0 CLK pins and 130 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<19> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<2> may have excessive skew because 
+      0 CLK pins and 130 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<18> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<5> may have excessive skew because 
+      0 CLK pins and 130 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<21> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<4> may have excessive skew because 
+      0 CLK pins and 130 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<20> may have excessive skew because 
+      1 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<25> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<24> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<7> may have excessive skew because 
+      0 CLK pins and 130 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<23> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<6> may have excessive skew because 
+      0 CLK pins and 130 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<22> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<27> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<26> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<29> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<28> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<31> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:mem_we<1> may have excessive skew because 
+      0 CLK pins and 258 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<9> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<8> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<11> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<10> may have excessive skew because 
+      2 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<13> may have excessive skew because 
+      2 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<12> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<15> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:dwdata<14> may have excessive skew because 
+      0 CLK pins and 34 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:idata<13> may have excessive skew because 
+      0 CLK pins and 39 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:idata<20> may have excessive skew because 
+      0 CLK pins and 279 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:idata<12> may have excessive skew because 
+      6 CLK pins and 57 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:idata<4> may have excessive skew because 
+      0 CLK pins and 12 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<28> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:idata<7> may have excessive skew because 
+      0 CLK pins and 18 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:idata<8> may have excessive skew because 
+      0 CLK pins and 62 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<6> may have excessive skew because 
+      0 CLK pins and 39 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<20> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<12> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<3> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<7> may have excessive skew because 
+      2 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:idata<23> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:idata<15> may have excessive skew because 
+      1 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<13> may have excessive skew because 
+      0 CLK pins and 10 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:idata<5> may have excessive skew because 
+      0 CLK pins and 14 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_3 may have excessive skew because 
+      1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<27> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<19> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<5> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_30 may have excessive skew because 
+      2 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_22 may have excessive skew because 
+      2 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<4> may have excessive skew because 
+      3 CLK pins and 30 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_28 may have excessive skew because 
+      1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_20 may have excessive skew because 
+      1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_12 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:mem_we<0> may have excessive skew because 
+      0 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_25 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_17 may have excessive skew because 
+      2 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_9 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<29> may have excessive skew because 
+      1 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<21> may have excessive skew because 
+      2 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<13> may have excessive skew because 
+      0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<31> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<23> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<15> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<2> may have excessive skew because 
+      0 CLK pins and 552 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<3> may have excessive skew because 
+      0 CLK pins and 296 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<11> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:idata<9> may have excessive skew because 
+      0 CLK pins and 19 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:idata<10> may have excessive skew because 
+      0 CLK pins and 8 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:idata<11> may have excessive skew because 
+      0 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:idata<22> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:idata<0> may have excessive skew because 
+      0 CLK pins and 45 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<24> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<16> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<30> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<22> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<14> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<5> may have excessive skew because 
+      0 CLK pins and 33 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<27> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<19> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<11> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<4> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_1 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_0 may have excessive skew because 
+      2 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_2 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_5 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_4 may have excessive skew because 
+      2 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_7 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_6 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_8 may have excessive skew because 
+      2 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<25> may have excessive skew because 
+      0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<17> may have excessive skew because 
+      1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<9> may have excessive skew because 
+      0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<8> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_31 may have excessive skew because 
+      1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_29 may have excessive skew because 
+      2 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_27 may have excessive skew because 
+      2 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_26 may have excessive skew because 
+      2 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_24 may have excessive skew because 
+      2 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_23 may have excessive skew because 
+      1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_21 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_19 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_18 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_16 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_15 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_14 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_13 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_11 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/registers/regfile_31_10 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<29> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<25> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<21> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<17> may have excessive skew because 
+      0 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<9> may have excessive skew because 
+      1 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:uut/pc<7> may have excessive skew because 
+      2 CLK pins and 9 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<15> may have excessive skew because 
+      0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<7> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<1> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<25> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<31> may have excessive skew because 
+      0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<23> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<30> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<22> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<14> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<0> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<24> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<16> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<8> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<0> may have excessive skew because 
+      0 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<14> may have excessive skew because 
+      0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<6> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<26> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<18> may have excessive skew because 
+      1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<10> may have excessive skew because 
+      1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<24> may have excessive skew because 
+      0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<16> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<8> may have excessive skew because 
+      0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<12> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<13> may have excessive skew because 
+      1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<15> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:idata<21> may have excessive skew because 
+      0 CLK pins and 16 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<19> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<18> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<2> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<20> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<22> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<17> may have excessive skew because 
+      1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<9> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<1> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:idata<17> may have excessive skew because 
+      0 CLK pins and 5 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<27> may have excessive skew because 
+      0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<11> may have excessive skew because 
+      2 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<31> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<23> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<28> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<20> may have excessive skew because 
+      1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<26> may have excessive skew because 
+      1 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<10> may have excessive skew because 
+      0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<30> may have excessive skew because 
+      1 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<28> may have excessive skew because 
+      1 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:drdata<12> may have excessive skew because 
+      0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<29> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:daddr<21> may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 27 secs 
+Total CPU time to Router completion: 25 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|        clk_divide_0 | BUFGMUX_X1Y10| No   | 2419 |  0.076     |  0.178      |
++---------------------+--------------+------+------+------------+-------------+
+|      vio_control<0> | BUFGMUX_X2Y11| No   |  932 |  0.076     |  0.178      |
++---------------------+--------------+------+------+------------+-------------+
+|           idata<13> |  BUFGMUX_X1Y0| No   |   65 |  0.060     |  0.163      |
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP | BUFGMUX_X1Y11| No   |    1 |  0.000     |  0.148      |
++---------------------+--------------+------+------+------------+-------------+
+|           mem_we<2> |         Local|      |  292 |  0.108     |  1.792      |
++---------------------+--------------+------+------+------------+-------------+
+|           mem_we<3> |         Local|      |  292 |  0.003     |  1.836      |
++---------------------+--------------+------+------+------------+-------------+
+|           uut/pc<2> |         Local|      |   34 |  0.244     |  2.213      |
++---------------------+--------------+------+------+------------+-------------+
+|           uut/pc<3> |         Local|      |   34 |  0.621     |  2.526      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<26> |         Local|      |   13 |  0.056     |  1.845      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<18> |         Local|      |   13 |  0.014     |  1.746      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<10> |         Local|      |   13 |  0.021     |  1.832      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<30> |         Local|      |   36 |  0.153     |  1.939      |
++---------------------+--------------+------+------+------------+-------------+
+|            daddr<6> |         Local|      |   72 |  0.085     |  1.724      |
++---------------------+--------------+------+------+------------+-------------+
+|            daddr<5> |         Local|      |  102 |  0.007     |  1.854      |
++---------------------+--------------+------+------+------------+-------------+
+|            daddr<4> |         Local|      |  197 |  0.287     |  1.904      |
++---------------------+--------------+------+------+------------+-------------+
+|           dwdata<1> |         Local|      |  132 |  0.180     |  1.943      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<17> |         Local|      |   36 |  0.028     |  1.905      |
++---------------------+--------------+------+------+------------+-------------+
+|           dwdata<0> |         Local|      |  132 |  0.086     |  1.383      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<16> |         Local|      |   36 |  0.009     |  1.330      |
++---------------------+--------------+------+------+------------+-------------+
+|           dwdata<3> |         Local|      |  132 |  0.020     |  1.639      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<19> |         Local|      |   36 |  0.151     |  1.890      |
++---------------------+--------------+------+------+------------+-------------+
+|           dwdata<2> |         Local|      |  132 |  0.067     |  1.868      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<18> |         Local|      |   36 |  0.001     |  1.858      |
++---------------------+--------------+------+------+------------+-------------+
+|           dwdata<5> |         Local|      |  132 |  0.056     |  1.896      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<21> |         Local|      |   36 |  0.013     |  1.663      |
++---------------------+--------------+------+------+------------+-------------+
+|           dwdata<4> |         Local|      |  132 |  0.050     |  1.864      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<20> |         Local|      |   36 |  0.539     |  2.218      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<25> |         Local|      |   36 |  0.063     |  1.809      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<24> |         Local|      |   36 |  0.000     |  1.049      |
++---------------------+--------------+------+------+------------+-------------+
+|           dwdata<7> |         Local|      |  132 |  0.014     |  1.773      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<23> |         Local|      |   36 |  0.004     |  1.968      |
++---------------------+--------------+------+------+------------+-------------+
+|           dwdata<6> |         Local|      |  132 |  0.024     |  1.263      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<22> |         Local|      |   36 |  0.130     |  1.835      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<27> |         Local|      |   36 |  0.043     |  1.751      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<26> |         Local|      |   36 |  0.006     |  1.048      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<29> |         Local|      |   36 |  0.007     |  1.335      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<28> |         Local|      |   36 |  0.003     |  1.627      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<31> |         Local|      |   36 |  0.014     |  1.822      |
++---------------------+--------------+------+------+------------+-------------+
+|           mem_we<1> |         Local|      |  260 |  0.028     |  1.914      |
++---------------------+--------------+------+------+------------+-------------+
+|           dwdata<9> |         Local|      |   36 |  0.006     |  1.765      |
++---------------------+--------------+------+------+------------+-------------+
+|           dwdata<8> |         Local|      |   36 |  0.000     |  1.339      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<11> |         Local|      |   36 |  0.006     |  1.778      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<10> |         Local|      |   36 |  0.257     |  1.382      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<13> |         Local|      |   36 |  0.930     |  2.032      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<12> |         Local|      |   36 |  0.036     |  2.028      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<15> |         Local|      |   36 |  0.129     |  1.873      |
++---------------------+--------------+------+------+------------+-------------+
+|          dwdata<14> |         Local|      |   36 |  0.039     |  1.789      |
++---------------------+--------------+------+------+------------+-------------+
+|           idata<20> |         Local|      |  281 |  0.084     |  1.716      |
++---------------------+--------------+------+------+------------+-------------+
+|           idata<12> |         Local|      |   63 |  0.691     |  1.967      |
++---------------------+--------------+------+------+------------+-------------+
+|            idata<4> |         Local|      |   14 |  0.136     |  1.848      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<28> |         Local|      |   13 |  0.342     |  1.999      |
++---------------------+--------------+------+------+------------+-------------+
+|            idata<7> |         Local|      |   20 |  0.118     |  1.492      |
++---------------------+--------------+------+------+------------+-------------+
+|            idata<8> |         Local|      |   64 |  0.216     |  1.298      |
++---------------------+--------------+------+------+------------+-------------+
+|           uut/pc<6> |         Local|      |   43 |  0.021     |  2.023      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<20> |         Local|      |   13 |  0.172     |  1.937      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<12> |         Local|      |   13 |  0.016     |  1.438      |
++---------------------+--------------+------+------+------------+-------------+
+|           drdata<3> |         Local|      |    5 |  0.006     |  1.692      |
++---------------------+--------------+------+------+------------+-------------+
+|            daddr<7> |         Local|      |    5 |  0.191     |  0.981      |
++---------------------+--------------+------+------+------------+-------------+
+|           idata<23> |         Local|      |    5 |  0.012     |  1.301      |
++---------------------+--------------+------+------+------------+-------------+
+|           idata<15> |         Local|      |    6 |  0.730     |  1.314      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<13> |         Local|      |   14 |  0.182     |  1.982      |
++---------------------+--------------+------+------+------------+-------------+
+|            idata<5> |         Local|      |   16 |  0.000     |  1.849      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|              e_31_3 |         Local|      |    5 |  0.776     |  2.159      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<27> |         Local|      |   13 |  0.027     |  1.843      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<19> |         Local|      |   13 |  0.106     |  1.882      |
++---------------------+--------------+------+------+------------+-------------+
+|           drdata<5> |         Local|      |    5 |  0.003     |  1.291      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_30 |         Local|      |    5 |  0.442     |  1.317      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_22 |         Local|      |    5 |  0.424     |  1.269      |
++---------------------+--------------+------+------+------------+-------------+
+|           uut/pc<4> |         Local|      |   34 |  0.825     |  2.902      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_28 |         Local|      |    5 |  0.460     |  1.366      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_20 |         Local|      |    5 |  0.351     |  1.457      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_12 |         Local|      |    5 |  0.092     |  1.784      |
++---------------------+--------------+------+------+------------+-------------+
+|           mem_we<0> |         Local|      |    9 |  0.002     |  0.607      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_25 |         Local|      |    5 |  0.000     |  1.353      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_17 |         Local|      |    5 |  0.000     |  0.865      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|              e_31_9 |         Local|      |    5 |  0.009     |  1.397      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<29> |         Local|      |    6 |  0.228     |  1.519      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<21> |         Local|      |    5 |  0.000     |  0.836      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<13> |         Local|      |    6 |  0.011     |  1.274      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<31> |         Local|      |   13 |  0.070     |  1.878      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<23> |         Local|      |   13 |  0.039     |  1.835      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<15> |         Local|      |   13 |  0.181     |  2.079      |
++---------------------+--------------+------+------+------------+-------------+
+|            daddr<2> |         Local|      |  554 |  0.039     |  1.722      |
++---------------------+--------------+------+------+------------+-------------+
+|            daddr<3> |         Local|      |  298 |  0.041     |  1.818      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<11> |         Local|      |   13 |  0.039     |  1.388      |
++---------------------+--------------+------+------+------------+-------------+
+|icon_instance/U0/iUP |              |      |      |            |             |
+|            DATE_OUT |         Local|      |    1 |  0.000     |  2.134      |
++---------------------+--------------+------+------+------------+-------------+
+|            idata<9> |         Local|      |   21 |  0.036     |  1.327      |
++---------------------+--------------+------+------+------------+-------------+
+|           idata<10> |         Local|      |   10 |  0.169     |  1.732      |
++---------------------+--------------+------+------+------------+-------------+
+|           idata<11> |         Local|      |    9 |  0.047     |  1.703      |
++---------------------+--------------+------+------+------------+-------------+
+|           idata<22> |         Local|      |    5 |  0.000     |  1.265      |
++---------------------+--------------+------+------+------------+-------------+
+|            idata<0> |         Local|      |   49 |  0.172     |  1.959      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<24> |         Local|      |   13 |  0.060     |  1.742      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<16> |         Local|      |   13 |  0.148     |  2.051      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<30> |         Local|      |   13 |  0.045     |  1.848      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<22> |         Local|      |   13 |  0.008     |  1.791      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<14> |         Local|      |   13 |  0.021     |  1.376      |
++---------------------+--------------+------+------+------------+-------------+
+|           uut/pc<5> |         Local|      |   37 |  0.241     |  2.184      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<27> |         Local|      |    5 |  0.016     |  1.313      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<19> |         Local|      |    5 |  0.021     |  1.270      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<11> |         Local|      |    5 |  0.155     |  1.711      |
++---------------------+--------------+------+------+------------+-------------+
+|           drdata<4> |         Local|      |    5 |  0.003     |  1.290      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|              e_31_1 |         Local|      |    5 |  0.047     |  1.822      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|              e_31_0 |         Local|      |    5 |  0.300     |  1.396      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|              e_31_2 |         Local|      |    5 |  0.288     |  1.981      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|              e_31_5 |         Local|      |    5 |  0.070     |  1.704      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|              e_31_4 |         Local|      |    5 |  0.252     |  1.173      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|              e_31_7 |         Local|      |    5 |  0.050     |  1.691      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|              e_31_6 |         Local|      |    5 |  0.000     |  1.519      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|              e_31_8 |         Local|      |    5 |  0.221     |  1.107      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<25> |         Local|      |    6 |  0.000     |  1.322      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<17> |         Local|      |    5 |  0.277     |  1.290      |
++---------------------+--------------+------+------+------------+-------------+
+|           drdata<9> |         Local|      |    6 |  0.003     |  1.911      |
++---------------------+--------------+------+------+------------+-------------+
+|           uut/pc<8> |         Local|      |   13 |  0.017     |  1.797      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_31 |         Local|      |    5 |  0.746     |  1.407      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_29 |         Local|      |    5 |  0.452     |  1.335      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_27 |         Local|      |    5 |  0.242     |  1.362      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_26 |         Local|      |    5 |  0.239     |  1.049      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_24 |         Local|      |    5 |  0.202     |  0.881      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_23 |         Local|      |    5 |  0.257     |  1.589      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_21 |         Local|      |    5 |  0.000     |  0.706      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_19 |         Local|      |    5 |  0.008     |  1.862      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_18 |         Local|      |    5 |  0.014     |  1.840      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_16 |         Local|      |    5 |  0.059     |  0.736      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_15 |         Local|      |    5 |  0.036     |  1.674      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_14 |         Local|      |    5 |  0.018     |  1.343      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_13 |         Local|      |    5 |  0.000     |  0.619      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_11 |         Local|      |    5 |  0.000     |  1.316      |
++---------------------+--------------+------+------+------------+-------------+
+|uut/registers/regfil |              |      |      |            |             |
+|             e_31_10 |         Local|      |    5 |  0.000     |  0.686      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<29> |         Local|      |   13 |  0.095     |  1.876      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<25> |         Local|      |   13 |  0.031     |  1.671      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<21> |         Local|      |   13 |  0.016     |  1.793      |
++---------------------+--------------+------+------+------------+-------------+
+|          uut/pc<17> |         Local|      |   13 |  0.051     |  1.884      |
++---------------------+--------------+------+------+------------+-------------+
+|           uut/pc<9> |         Local|      |   13 |  0.699     |  1.376      |
++---------------------+--------------+------+------+------------+-------------+
+|           uut/pc<7> |         Local|      |   13 |  0.377     |  2.170      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<15> |         Local|      |    6 |  0.029     |  1.552      |
++---------------------+--------------+------+------+------------+-------------+
+|           drdata<7> |         Local|      |    5 |  0.038     |  1.635      |
++---------------------+--------------+------+------+------------+-------------+
+|           drdata<1> |         Local|      |    5 |  0.106     |  1.811      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<25> |         Local|      |    5 |  0.000     |  1.628      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<31> |         Local|      |    6 |  0.035     |  1.355      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<23> |         Local|      |    5 |  0.006     |  1.287      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<30> |         Local|      |    5 |  0.006     |  1.365      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<22> |         Local|      |    5 |  0.028     |  1.566      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<14> |         Local|      |    5 |  0.002     |  1.279      |
++---------------------+--------------+------+------+------------+-------------+
+|           drdata<0> |         Local|      |    5 |  0.032     |  1.907      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<24> |         Local|      |    5 |  0.007     |  1.560      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<16> |         Local|      |    5 |  0.000     |  0.592      |
++---------------------+--------------+------+------+------------+-------------+
+|            daddr<8> |         Local|      |    5 |  0.007     |  1.024      |
++---------------------+--------------+------+------+------------+-------------+
+|            daddr<0> |         Local|      |    4 |  0.052     |  1.288      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<14> |         Local|      |    6 |  0.024     |  1.324      |
++---------------------+--------------+------+------+------------+-------------+
+|           drdata<6> |         Local|      |    5 |  0.007     |  1.914      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<26> |         Local|      |    5 |  0.312     |  1.887      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<18> |         Local|      |    5 |  0.455     |  1.285      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<10> |         Local|      |    5 |  0.295     |  1.306      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<24> |         Local|      |    6 |  0.701     |  2.260      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<16> |         Local|      |    5 |  0.154     |  1.766      |
++---------------------+--------------+------+------+------------+-------------+
+|           drdata<8> |         Local|      |    6 |  0.001     |  1.774      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<12> |         Local|      |    5 |  0.196     |  1.769      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<13> |         Local|      |    5 |  0.697     |  1.283      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<15> |         Local|      |    5 |  0.000     |  1.361      |
++---------------------+--------------+------+------+------------+-------------+
+|           idata<21> |         Local|      |   18 |  0.002     |  1.297      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<19> |         Local|      |    5 |  0.011     |  1.287      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<18> |         Local|      |    5 |  0.003     |  1.290      |
++---------------------+--------------+------+------+------------+-------------+
+|           drdata<2> |         Local|      |    5 |  0.010     |  1.637      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<20> |         Local|      |    5 |  0.000     |  1.293      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<22> |         Local|      |    5 |  0.045     |  1.343      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<17> |         Local|      |    5 |  0.713     |  2.400      |
++---------------------+--------------+------+------+------------+-------------+
+|            daddr<9> |         Local|      |    5 |  0.071     |  1.731      |
++---------------------+--------------+------+------+------------+-------------+
+|            daddr<1> |         Local|      |    5 |  0.170     |  1.730      |
++---------------------+--------------+------+------+------------+-------------+
+|           idata<17> |         Local|      |    7 |  0.000     |  1.313      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<27> |         Local|      |    6 |  0.027     |  1.315      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<11> |         Local|      |    6 |  0.682     |  1.900      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<31> |         Local|      |    5 |  0.000     |  1.285      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<23> |         Local|      |    5 |  0.041     |  1.588      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<28> |         Local|      |    5 |  0.009     |  1.028      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<20> |         Local|      |    5 |  0.584     |  1.545      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<26> |         Local|      |    6 |  0.255     |  1.562      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<10> |         Local|      |    6 |  0.268     |  1.895      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<30> |         Local|      |    6 |  0.636     |  2.061      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<28> |         Local|      |    6 |  0.593     |  1.298      |
++---------------------+--------------+------+------+------------+-------------+
+|          drdata<12> |         Local|      |    6 |  0.000     |  1.313      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<29> |         Local|      |    5 |  0.020     |  1.712      |
++---------------------+--------------+------+------+------------+-------------+
+|           daddr<21> |         Local|      |    5 |  0.027     |  1.562      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    12.142ns|     2.858ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    13.656ns|     1.344ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    19.332ns|    10.668ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.801ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|    16.255ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     3.647ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 28 secs 
+Total CPU time to PAR completion: 26 secs 
+
+Peak Memory Usage:  702 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 178
+Number of info messages: 0
+
+Writing design to file top_clk.ncd
+
+
+
+PAR done!

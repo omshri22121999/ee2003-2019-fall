@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj exp6 -o "/home/omshripc/Sem 5/EE2003/ISE/expt6/exp6/multiply.tfi" -lib work "/home/omshripc/Sem 5/EE2003/ISE/expt6//multiply.v" -module multiply -template /opt/tools/xilinx/ise/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

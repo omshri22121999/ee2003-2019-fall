@@ -1,5 +1,5 @@
 #ChipScope Core Generator Project File Version 3.0
-#Thu Aug 15 17:26:15 IST 2019
+#Tue Oct 29 09:29:30 IST 2019
 SignalExport.asyncInput<0000>=AsyncIn[0]
 SignalExport.asyncInput<0001>=AsyncIn[1]
 SignalExport.asyncInput<0002>=AsyncIn[2]
@@ -103,7 +103,33 @@ SignalExport.asyncOutput<0066>=AsyncOut[66]
 SignalExport.asyncOutput<0067>=AsyncOut[67]
 SignalExport.asyncOutput<0068>=AsyncOut[68]
 SignalExport.asyncOutput<0069>=AsyncOut[69]
-SignalExport.asyncOutputWidth=70
+SignalExport.asyncOutput<0070>=AsyncOut[70]
+SignalExport.asyncOutput<0071>=AsyncOut[71]
+SignalExport.asyncOutput<0072>=AsyncOut[72]
+SignalExport.asyncOutput<0073>=AsyncOut[73]
+SignalExport.asyncOutput<0074>=AsyncOut[74]
+SignalExport.asyncOutput<0075>=AsyncOut[75]
+SignalExport.asyncOutput<0076>=AsyncOut[76]
+SignalExport.asyncOutput<0077>=AsyncOut[77]
+SignalExport.asyncOutput<0078>=AsyncOut[78]
+SignalExport.asyncOutput<0079>=AsyncOut[79]
+SignalExport.asyncOutput<0080>=AsyncOut[80]
+SignalExport.asyncOutput<0081>=AsyncOut[81]
+SignalExport.asyncOutput<0082>=AsyncOut[82]
+SignalExport.asyncOutput<0083>=AsyncOut[83]
+SignalExport.asyncOutput<0084>=AsyncOut[84]
+SignalExport.asyncOutput<0085>=AsyncOut[85]
+SignalExport.asyncOutput<0086>=AsyncOut[86]
+SignalExport.asyncOutput<0087>=AsyncOut[87]
+SignalExport.asyncOutput<0088>=AsyncOut[88]
+SignalExport.asyncOutput<0089>=AsyncOut[89]
+SignalExport.asyncOutput<0090>=AsyncOut[90]
+SignalExport.asyncOutput<0091>=AsyncOut[91]
+SignalExport.asyncOutput<0092>=AsyncOut[92]
+SignalExport.asyncOutput<0093>=AsyncOut[93]
+SignalExport.asyncOutput<0094>=AsyncOut[94]
+SignalExport.asyncOutput<0095>=AsyncOut[95]
+SignalExport.asyncOutputWidth=96
 SignalExport.syncInputWidth=0
 SignalExport.syncOutputWidth=0
 SignalExport.type=vio

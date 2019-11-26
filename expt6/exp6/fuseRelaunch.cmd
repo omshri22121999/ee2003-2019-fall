@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/omshripc/Sem 5/EE2003/ISE/expt6/exp6/cpu_tb_isim_beh.exe" -prj "/home/omshripc/Sem 5/EE2003/ISE/expt6/exp6/cpu_tb_beh.prj" "work.cpu_tb" "work.glbl" 

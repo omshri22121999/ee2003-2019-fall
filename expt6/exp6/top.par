@@ -1,0 +1,1145 @@
+Release 14.7 par P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+omshripc::  Tue Nov 26 15:42:57 2019
+
+par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
+
+
+Constraints file: top.pcf.
+Loading device for application Rf_Device from file '3s500e.nph' in environment /opt/tools/xilinx/ise/14.7/ISE_DS/ISE/.
+   "top" is an NCD, version 3.2, device xc3s500e, package fg320, speed -5
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.27 2013-10-13".
+
+
+Design Summary Report:
+
+ Number of External IOBs                           1 out of 232     1%
+
+   Number of External Input IOBs                  1
+
+      Number of External Input IBUFs              1
+        Number of LOCed External Input IBUFs      1 out of 1     100%
+
+
+   Number of External Output IOBs                 0
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BSCANs                          1 out of 1     100%
+   Number of BUFGMUXs                        2 out of 24      8%
+   Number of RAMB16s                         4 out of 20     20%
+   Number of Slices                       4173 out of 4656   89%
+      Number of SLICEMs                    435 out of 2328   18%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 3 secs 
+Finished initial Timing Analysis.  REAL time: 3 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 3 secs 
+Total CPU  time at the beginning of Placer: 3 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:1b324df7) REAL time: 4 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:1b324df7) REAL time: 4 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:68321d4c) REAL time: 4 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:24ad01b4) REAL time: 5 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:24ad01b4) REAL time: 5 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:24ad01b4) REAL time: 5 secs 
+
+Phase 7.8  Global Placement
+........................
+.............................................................................................................................................
+..........................................................................
+...........
+Phase 7.8  Global Placement (Checksum:70c1d2e4) REAL time: 8 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:70c1d2e4) REAL time: 9 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:c610dd40) REAL time: 12 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:c610dd40) REAL time: 13 secs 
+
+Total REAL time to Placer completion: 13 secs 
+Total CPU  time to Placer completion: 12 secs 
+Writing design to file top.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 24680 unrouted;      REAL time: 16 secs 
+
+Phase  2  : 20845 unrouted;      REAL time: 18 secs 
+
+Phase  3  : 5700 unrouted;      REAL time: 20 secs 
+
+Phase  4  : 5700 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 21 secs 
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 24 secs 
+
+Updating file: top.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 25 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 25 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 26 secs 
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_1 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_0 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<31> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<30> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<29> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<28> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<27> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<26> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<25> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<24> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<23> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<22> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<21> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<20> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<19> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<18> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<17> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<16> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<15> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<14> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<13> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<12> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<11> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<10> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_0 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/Mmux__COND_10_6_f5 may have excessive skew because 
+      0 CLK pins and 457 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<9> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<8> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<7> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<6> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<5> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<4> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<3> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/IF_STAGE/pc_o_r<2> may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_20 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_21 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_29 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_22 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_2 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_23 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_30 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_9 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_24 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_31 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_25 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_3 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_26 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_4 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_27 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_5 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_28 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_6 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_7 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_8 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_11 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_10 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_10 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_13 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_12 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_21 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_20 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_11 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_12 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_13 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_14 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_15 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_16 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_17 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_18 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_3_19 may have excessive skew because 
+      1 CLK pins and 7 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_5 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_4 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_7 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_6 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_9 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_8 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_15 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_14 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_23 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_22 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_31 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_30 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_17 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_16 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_25 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_24 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_19 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_18 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_27 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_26 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_3 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_29 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_28 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_1 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CPU_main/EX_STAGE/rf_module/register_field_31_2 may have excessive skew because 
+      1 CLK pins and 6 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:ila_ctrl<13> may have excessive skew because 
+      1 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 26 secs 
+Total CPU time to Router completion: 26 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP | BUFGMUX_X1Y11| No   | 1968 |  0.075     |  0.178      |
++---------------------+--------------+------+------+------------+-------------+
+|         ila_ctrl<0> | BUFGMUX_X1Y10| No   |  642 |  0.076     |  0.178      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|              ld_3_1 |         Local|      |    8 |  0.000     |  2.278      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|              ld_3_0 |         Local|      |    8 |  0.000     |  1.796      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<31> |         Local|      |    7 |  0.000     |  0.635      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<30> |         Local|      |    7 |  0.000     |  0.756      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<29> |         Local|      |    7 |  0.000     |  2.312      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<28> |         Local|      |    7 |  0.000     |  1.434      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<27> |         Local|      |    7 |  0.000     |  1.945      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<26> |         Local|      |    7 |  0.000     |  1.863      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<25> |         Local|      |    7 |  0.000     |  2.191      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<24> |         Local|      |    7 |  0.000     |  2.197      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<23> |         Local|      |    7 |  0.000     |  2.592      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<22> |         Local|      |    7 |  0.000     |  1.677      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<21> |         Local|      |    7 |  0.000     |  1.507      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<20> |         Local|      |    7 |  0.000     |  1.635      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<19> |         Local|      |    7 |  0.000     |  1.769      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<18> |         Local|      |    7 |  0.000     |  1.282      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<17> |         Local|      |    7 |  0.000     |  1.328      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<16> |         Local|      |    7 |  0.000     |  0.960      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<15> |         Local|      |    7 |  0.000     |  1.914      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<14> |         Local|      |    7 |  0.000     |  0.852      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<13> |         Local|      |    7 |  0.000     |  1.236      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<12> |         Local|      |    7 |  0.000     |  0.716      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<11> |         Local|      |    7 |  0.000     |  1.155      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|            _o_r<10> |         Local|      |    7 |  0.000     |  1.944      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_31_0 |         Local|      |    7 |  0.000     |  1.621      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/Mmux__COND_1 |              |      |      |            |             |
+|              0_6_f5 |         Local|      |  459 |  0.073     |  2.254      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|             _o_r<9> |         Local|      |    7 |  0.000     |  2.582      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|             _o_r<8> |         Local|      |    7 |  0.000     |  1.605      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|             _o_r<7> |         Local|      |    7 |  0.000     |  1.046      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|             _o_r<6> |         Local|      |    7 |  0.000     |  1.899      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|             _o_r<5> |         Local|      |    7 |  0.000     |  1.360      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|             _o_r<4> |         Local|      |    7 |  0.000     |  1.465      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|             _o_r<3> |         Local|      |    7 |  0.000     |  1.104      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/IF_STAGE/pc |              |      |      |            |             |
+|             _o_r<2> |         Local|      |    7 |  0.000     |  1.280      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_20 |         Local|      |    8 |  0.000     |  1.687      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_21 |         Local|      |    8 |  0.000     |  1.451      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_29 |         Local|      |    8 |  0.000     |  2.331      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_22 |         Local|      |    8 |  0.000     |  1.666      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|              ld_3_2 |         Local|      |    8 |  0.000     |  2.404      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_23 |         Local|      |    8 |  0.000     |  1.282      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_30 |         Local|      |    8 |  0.000     |  1.835      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|              ld_3_9 |         Local|      |    8 |  0.000     |  2.231      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_24 |         Local|      |    8 |  0.000     |  1.257      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_31 |         Local|      |    8 |  0.000     |  1.375      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_25 |         Local|      |    8 |  0.000     |  1.847      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|              ld_3_3 |         Local|      |    8 |  0.000     |  3.052      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_26 |         Local|      |    8 |  0.000     |  1.842      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|              ld_3_4 |         Local|      |    8 |  0.000     |  2.172      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_27 |         Local|      |    8 |  0.000     |  1.993      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|              ld_3_5 |         Local|      |    8 |  0.000     |  1.970      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_28 |         Local|      |    8 |  0.000     |  1.914      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|              ld_3_6 |         Local|      |    8 |  0.000     |  1.991      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|              ld_3_7 |         Local|      |    8 |  0.000     |  2.452      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|              ld_3_8 |         Local|      |    8 |  0.000     |  2.228      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_11 |         Local|      |    7 |  0.000     |  2.117      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_10 |         Local|      |    7 |  0.000     |  1.856      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_10 |         Local|      |    8 |  0.000     |  1.300      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_13 |         Local|      |    7 |  0.000     |  1.524      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_12 |         Local|      |    7 |  0.000     |  2.408      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_21 |         Local|      |    7 |  0.000     |  1.960      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_20 |         Local|      |    7 |  0.000     |  1.254      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_11 |         Local|      |    8 |  0.000     |  2.720      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_12 |         Local|      |    8 |  0.000     |  2.320      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_13 |         Local|      |    8 |  0.000     |  1.198      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_14 |         Local|      |    8 |  0.000     |  1.710      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_15 |         Local|      |    8 |  0.000     |  1.849      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_16 |         Local|      |    8 |  0.000     |  1.700      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_17 |         Local|      |    8 |  0.000     |  0.981      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_18 |         Local|      |    8 |  0.000     |  1.187      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_3_19 |         Local|      |    8 |  0.000     |  1.830      |
++---------------------+--------------+------+------+------------+-------------+
+|icon_inst/U0/iUPDATE |              |      |      |            |             |
+|                _OUT |         Local|      |    1 |  0.000     |  1.554      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_31_5 |         Local|      |    7 |  0.000     |  2.590      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_31_4 |         Local|      |    7 |  0.000     |  2.383      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_31_7 |         Local|      |    7 |  0.000     |  1.917      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_31_6 |         Local|      |    7 |  0.000     |  2.291      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_31_9 |         Local|      |    7 |  0.000     |  1.929      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_31_8 |         Local|      |    7 |  0.000     |  1.734      |
++---------------------+--------------+------+------+------------+-------------+
+|        ila_ctrl<13> |         Local|      |    5 |  0.000     |  0.567      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[60].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.999      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[52].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.516      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[44].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[36].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.513      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[28].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  1.210      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_15 |         Local|      |    7 |  0.000     |  2.067      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_14 |         Local|      |    7 |  0.000     |  1.061      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_23 |         Local|      |    7 |  0.000     |  0.950      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_22 |         Local|      |    7 |  0.000     |  2.391      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_31 |         Local|      |    7 |  0.000     |  1.582      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_30 |         Local|      |    7 |  0.000     |  1.296      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_17 |         Local|      |    7 |  0.000     |  1.493      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_16 |         Local|      |    7 |  0.000     |  0.725      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_25 |         Local|      |    7 |  0.000     |  1.762      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_24 |         Local|      |    7 |  0.000     |  1.821      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[3].SYNC_IN |              |      |      |            |             |
+|     _CELL/user_in_n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_19 |         Local|      |    7 |  0.000     |  2.297      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_18 |         Local|      |    7 |  0.000     |  1.189      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_27 |         Local|      |    7 |  0.000     |  1.921      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_26 |         Local|      |    7 |  0.000     |  1.202      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[91].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.247      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[83].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.558      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[75].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_31_3 |         Local|      |    7 |  0.000     |  1.958      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[67].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.247      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[59].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_29 |         Local|      |    7 |  0.000     |  0.965      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|            ld_31_28 |         Local|      |    7 |  0.000     |  2.080      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[5].SYNC_IN |              |      |      |            |             |
+|     _CELL/user_in_n |         Local|      |    1 |  0.000     |  0.742      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[11].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.303      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[70].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.713      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[62].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.977      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[54].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.981      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[46].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.756      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[38].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_31_1 |         Local|      |    7 |  0.000     |  1.767      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[0].SYNC_IN |              |      |      |            |             |
+|     _CELL/user_in_n |         Local|      |    1 |  0.000     |  0.746      |
++---------------------+--------------+------+------+------------+-------------+
+|CPU_main/EX_STAGE/rf |              |      |      |            |             |
+|_module/register_fie |              |      |      |            |             |
+|             ld_31_2 |         Local|      |    7 |  0.000     |  1.260      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[41].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[33].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.301      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[25].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.250      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[17].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.743      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[20].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[12].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.250      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[21].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.986      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[13].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.513      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[94].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.271      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[86].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.558      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[78].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[80].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[72].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.742      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[64].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.933      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[56].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[48].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  1.208      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[7].SYNC_IN |              |      |      |            |             |
+|     _CELL/user_in_n |         Local|      |    1 |  0.000     |  0.250      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[92].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.301      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[84].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[76].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.511      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[68].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[6].SYNC_IN |              |      |      |            |             |
+|     _CELL/user_in_n |         Local|      |    1 |  0.000     |  0.301      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[31].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.980      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[23].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.303      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[15].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.969      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[71].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[63].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.763      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[55].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.467      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[47].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.508      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[39].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.569      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[1].SYNC_IN |              |      |      |            |             |
+|     _CELL/user_in_n |         Local|      |    1 |  0.000     |  0.301      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[88].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  1.185      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[90].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.718      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[82].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[74].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.980      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[66].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  1.001      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[58].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.745      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[50].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[42].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[34].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[26].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.993      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[18].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  1.212      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[9].SYNC_IN |              |      |      |            |             |
+|     _CELL/user_in_n |         Local|      |    1 |  0.000     |  0.976      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[93].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[85].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.973      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[77].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.511      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[69].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.247      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[51].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.977      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[43].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.801      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[35].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.243      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[27].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.747      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[19].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.467      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[2].SYNC_IN |              |      |      |            |             |
+|     _CELL/user_in_n |         Local|      |    1 |  0.000     |  0.314      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[95].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.301      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[87].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.246      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[79].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.959      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[10].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[30].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.301      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[22].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  1.213      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[14].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.742      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[61].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.717      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[53].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[45].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.248      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[37].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.980      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[29].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.942      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[4].SYNC_IN |              |      |      |            |             |
+|     _CELL/user_in_n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[8].SYNC_IN |              |      |      |            |             |
+|     _CELL/user_in_n |         Local|      |    1 |  0.000     |  0.987      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[81].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.980      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[73].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.980      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[65].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.245      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[57].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.303      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[49].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.246      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[40].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.742      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[32].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[24].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.976      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[16].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.979      |
++---------------------+--------------+------+------+------------+-------------+
+|vio_inst/U0/I_VIO/GE |              |      |      |            |             |
+|N_SYNC_IN[89].SYNC_I |              |      |      |            |             |
+|    N_CELL/user_in_n |         Local|      |    1 |  0.000     |  0.301      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 2
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    10.557ns|     4.443ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    13.715ns|     1.285ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    18.501ns|    11.499ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.630ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D2_TO_T2_path" TIG               | SETUP       |         N/A|     6.061ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J2_TO_D2_path" TIG               | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J3_TO_D2_path" TIG               | N/A         |         N/A|         N/A|     N/A|         N/A
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J4_TO_D2_path" TIG               | MAXDELAY    |         N/A|     4.250ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_J_TO_D_path" TIG                 | SETUP       |         N/A|     7.889ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_D_TO_J_path" TIG                 | SETUP       |         N/A|     5.698ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 27 secs 
+Total CPU time to PAR completion: 26 secs 
+
+Peak Memory Usage:  709 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 96
+Number of info messages: 0
+
+Writing design to file top.ncd
+
+
+
+PAR done!

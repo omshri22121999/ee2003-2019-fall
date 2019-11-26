@@ -1,0 +1,102 @@
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.syr" 
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf -ucf clk.ucf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf -ucf clk.ucf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf -ucf clk.ucf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf -ucf clk.ucf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf -ucf clk.ucf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf -ucf clk.ucf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf -ucf clk.ucf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf -ucf clk.ucf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf -ucf clk.ucf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf -ucf clk.ucf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf -ucf clk.ucf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf -ucf clk.ucf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf -ucf clk.ucf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf -ucf clk.ucf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf -ucf clk.ucf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 
+xst -intstyle ise -ifn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.xst" -ofn "/home/omshripc/Sem 5/EE2003/ISE/expt3/exp3/top_clk.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc clk.ucf -p xc3s500e-fg320-5 "top_clk.ngc" top_clk.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o top_clk_map.ncd top_clk.ngd top_clk.pcf 
+par -w -intstyle ise -ol high -t 1 top_clk_map.ncd top_clk.ncd top_clk.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml top_clk.twx top_clk.ncd -o top_clk.twr top_clk.pcf -ucf clk.ucf 
+bitgen -intstyle ise -f top_clk.ut top_clk.ncd 

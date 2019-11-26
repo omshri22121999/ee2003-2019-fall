@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+multiply instance_name (
+    .clk_i(clk_i), 
+    .reset_i(reset_i), 
+    .a_i(a_i), 
+    .b_i(b_i), 
+    .mini_opcode_i(mini_opcode_i), 
+    .mul_out_o(mul_out_o), 
+    .valid_o(valid_o)
+    );
+
+
