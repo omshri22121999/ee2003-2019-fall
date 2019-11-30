@@ -20,7 +20,7 @@ Analyzing Verilog file "/opt/tools/xilinx/ise/14.7/ISE_DS/ISE//verilog/src/glbl.
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 104196 KB
-Fuse CPU Usage: 1310 ms
+Fuse CPU Usage: 990 ms
 Compiling module pipeline_if
 Compiling module pipeline_id
 Compiling module alu_32_bit
@@ -36,9 +36,8 @@ Compiling module CPU
 Compiling module cpu_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 14 Verilog Units
 Built simulation executable /home/omshripc/Sem 5/EE2003/ISE/expt6/exp6/cpu_tb_isim_beh.exe
 Fuse Memory Usage: 1189512 KB
-Fuse CPU Usage: 1430 ms
-GCC CPU Usage: 4620 ms
+Fuse CPU Usage: 1100 ms
+GCC CPU Usage: 2970 ms
