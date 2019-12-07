@@ -39,7 +39,7 @@ module pipeline_mem(
 	output [31:0] peripheral_read_o,
 	output [31:0] dmem_read_o,
 	output [31:0] mul_read_o,
-	
+	output error_o,
 	output valid_stall_o,
 
 	output stall_o					//Stall
@@ -175,7 +175,8 @@ module pipeline_mem(
 			.w_data_o(dmem_corr_write_data_w),	//Output Write Data for DMEM
 			.peripheral_ce(peripheral_ce_w),		//Peripheral Chip Enable
 			.we_o(dmem_we_w),							//Write Enable system for DMEM Write Enable
-			.per_we_o(peripheral_we_w)	//Write Enable system for Peripheral Write Enable
+			.per_we_o(peripheral_we_w),	//Write Enable system for Peripheral Write Enable
+			.error_o(error_o)
 	);
 	
 	//-------------------------------//

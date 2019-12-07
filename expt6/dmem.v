@@ -29,7 +29,8 @@ module dmem(
 	
 	//Output
 	output [31:0] drdata_o,	//Read Data
-	output valid_o
+	output valid_o,
+	output error_o
 );
 
 		reg [7:0] m_r[0:127];
@@ -57,21 +58,25 @@ module dmem(
 		//-------------------------------------------//
 		// 					Set Write Data		  			//
 		//-------------------------------------------//
-
+		
+		assign err_o = (daddr_i >= 128) ? 1 : 0;
+		
 		always @(posedge clk) begin
 		  
 			if(reset) begin
 				$readmemh("dmem_ini.mem",m_r);
 			end
 			else begin  
-				if (we_i[0]==1 && ce_i==1)
-					m_r[add0_w]= dwdata_i[7:0];
-				if (we_i[1]==1 && ce_i==1)
-					m_r[add1_w]= dwdata_i[15:8];
-				if (we_i[2]==1 && ce_i==1)
-					m_r[add2_w]= dwdata_i[23:16];
-				if (we_i[3]==1 && ce_i==1)
-					m_r[add3_w]= dwdata_i[31:24];
+				if(daddr_i<128) begin
+					if (we_i[0]==1 && ce_i==1)
+						m_r[add0_w]= dwdata_i[7:0];
+					if (we_i[1]==1 && ce_i==1)
+						m_r[add1_w]= dwdata_i[15:8];
+					if (we_i[2]==1 && ce_i==1)
+						m_r[add2_w]= dwdata_i[23:16];
+					if (we_i[3]==1 && ce_i==1)
+						m_r[add3_w]= dwdata_i[31:24];
+				end
 			end
 		end
 		
