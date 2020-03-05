@@ -34,3 +34,5 @@ Submission:
 Note: this should work with the CPU design you have already submitted. If you need to change that, you can submit a fresh CPU design, but all subject to posted deadlines.
 
 Also, this should work both with the single-cycle and pipelined designs.
+
+## Note: Check Project Report for detailed explanation

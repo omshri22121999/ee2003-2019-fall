@@ -1,2 +1,0 @@
-should I do decision on register forwarding using the instruction in the IF or ID stage?
-found out by comparing the timing delays in both the IF and the ID stages.
